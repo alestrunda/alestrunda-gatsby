@@ -3,32 +3,53 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+  <div id="page-header" class="page-header page-header--fixed">
+    <div class="container">
+      <Link to="/" class="site-logo el-relative">
+        <div class="decoration-border decoration-border--top decoration-border--small"></div>
+        <div class="decoration-border decoration-border--bottom decoration-border--small"></div>
+        <img class="site-logo__img" alt="alestrunda logo" src="" />
+      </Link>
+      <h1 class="heading-site-title">{siteTitle}</h1>
+      <div id="main-nav-btn" class="nav-btn">
+        <i class="fa fa-reorder"></i>
+      </div>
+      <nav id="main-page-nav" class="nav-main">
+        <ul id="main-menu-list">
+          <li class="active">
+            <a href="#top">
+              <div class="nav-main__link">Home</div>
+            </a>
+          </li>
+          <li>
+            <a href="#about">
+              <div class="nav-main__link">About me</div>
+            </a>
+          </li>
+          <li>
+            <a href="#portfolio">
+              <div class="nav-main__link">Portfolio</div>
+            </a>
+          </li>
+          <li>
+            <a href="#news">
+              <div class="nav-main__link">News</div>
+            </a>
+          </li>
+          <li>
+            <a href="#services">
+              <div class="nav-main__link">Services</div>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <div class="nav-main__link">Contact</div>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </header>
+  </div>
 )
 
 Header.propTypes = {
