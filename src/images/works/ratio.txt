@@ -1,0 +1,9 @@
+prohlíeè 1182 šíøka a plná vıška
+
+@2x:
+- síøka 800
+- vıška 600
+
+základ:
+- šíøka 600
+- vıška 450

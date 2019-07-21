@@ -1,14 +1,14 @@
 a {
-    color: $color-main;
-    text-decoration: none;
-    transition: all 0.2s ease-out;
+  color: $color-main;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
 
-    &:focus {
-        outline: none;
-    }
+  &:focus {
+    outline: none;
+  }
 
-    &:hover {
-        color: inherit;
-        text-decoration: underline;
-    }
+  &:hover {
+    color: inherit;
+    text-decoration: underline;
+  }
 }

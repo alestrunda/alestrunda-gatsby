@@ -2,13 +2,11 @@ import { Link } from "gatsby"
 import React from "react"
 
 const Footer = () => (
-  <footer class="section-light page-footer">
-    <div class="container">
+  <footer className="section-light page-footer">
+    <div className="container">
       <p>
-        Created by <Link to="/">Aleš Trunda</Link>
-        All rights reserved &copy; {new Date().getFullYear()}
-        <br />
-        Some icons from <a href="https://www.vecteezy.com/">Vecteezy</a>
+        Created by <Link to="/">Aleš Trunda</Link>. All rights reserved &copy;{" "}
+        {new Date().getFullYear()}
       </p>
     </div>
   </footer>

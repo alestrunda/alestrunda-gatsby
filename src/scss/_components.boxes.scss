@@ -1,139 +1,149 @@
 .box-icon {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
-    .box-icon--offset-top {
-        margin-top: 110px;
+.box-icon--offset-top {
+  margin-top: 110px;
 
-        @include break(md) {
-            margin-top: 70px;
-        }
+  @include break(md) {
+    margin-top: 70px;
+  }
 
-        @include break(sm) {
-            margin-top: 50px;
-        }
-    }
+  @include break(sm) {
+    margin-top: 50px;
+  }
+}
 
 .box-icon__box {
-	position: relative;
-    height: 128px;
-	width: 128px;
-	margin: 0 auto;
-	background-color: $color-main;
-	color: #fff;
-    transition: background-color ease-out 0.3s;
-    font-size: 60px;
+  position: relative;
+  height: 128px;
+  width: 128px;
+  margin: 0 auto;
+  background-color: $color-main;
+  color: #fff;
+  transition: background-color ease-out 0.3s;
+  font-size: 60px;
 
-    .box-icon:hover & {
-        background-color: $color-dark;
-    }
+  .box-icon:hover & {
+    background-color: $color-dark;
+  }
 }
 
-    .box-icon__box--gray {
-        background-color: $color-gray;
+.box-icon__box--gray {
+  background-color: $color-gray;
 
-        .box-icon:hover & {
-            background-color: $color-main;
-        }
-    }
+  .box-icon:hover & {
+    background-color: $color-main;
+  }
+}
 
-    .box-icon__box--small {
-        width: 50px;
-        height: 50px;
-        font-size: 20px;
-    }
+.box-icon__box--small {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+}
 
 .box-icon__icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .box-info {
-    font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
-    text-transform: uppercase;
-    color: #fff;
-    height: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
 
-    @include break-min(lg) {
-        border-right: 1px $color-text solid;
-    }
+  .box-info-grid > .grid__item:last-of-type & {
+    border: 0;
+  }
+
+  @include break-min(lg) {
+    border-right: 1px $color-text solid;
+  }
 }
 
-    .box-info--no-border {
-        border: 0;
-    }
+.box-info--no-border {
+  border: 0;
+}
 
 .box-info__detail {
-    display: flex;
-    align-items: center;
-	color: $color-gray-light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $color-gray-light;
 }
 
 .box-info__icon {
-    align-self: flex-start;
-    margin-right: 12px;
-    flex: none;
-    margin-bottom: 10px;
+  align-self: flex-start;
+  margin-right: 12px;
+  flex: none;
+}
+
+.box-info__val {
+  text-align: center;
+  font-size: 48px;
 }
 
 .box-service {
-	position: relative;
-    font-family: 'Open Sans', sans-serif;
-    margin-bottom: 60px;
-	text-align: center;
-	border: 1px $color-border solid;
-	border-radius: 3px;
-    transition: all 0.4s ease-out;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 60px;
+  text-align: center;
+  border: 1px $color-border solid;
+  border-radius: 3px;
+  transition: all 0.4s ease-out;
 
-    &:hover {
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    }
+  &:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
 
-    @include break(md) {
-        margin-bottom: 40px;
-    }
+  @include break(md) {
+    margin-bottom: 40px;
+  }
 }
 
 .box-service__content {
-	font-size: 13px;
-    color: $color-service;
+  font-size: 13px;
+  color: $color-service;
 }
 
 .box-service__content-line {
-    padding: 8px 20px;
-    border-top: 1px $color-service-border solid;
-    border-bottom: 1px $color-service-border solid;
-    background-color: #f6f6f6;
+  padding: 8px 20px;
+  border-top: 1px $color-service-border solid;
+  border-bottom: 1px $color-service-border solid;
+  background-color: #f6f6f6;
 
-    &:nth-child(2n) {
-        border: none;
-        background-color: transparent;
-    }
+  &:nth-child(2n) {
+    border: none;
+    background-color: transparent;
+  }
 }
 
 .box-service__head {
-	font-family: 'Raleway';
-	font-weight: 600;
-	font-size: 20px;
-	color: $color-darker;
-	border-bottom: 1px $color-service-border solid;
-	text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-	width: 100%;
-	height: 80px;
-	transition: all 0.3s ease-out;
-    border-radius: 3px 3px 0 0;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 20px;
+  color: $color-darker;
+  border-bottom: 1px $color-service-border solid;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  transition: all 0.3s ease-out;
+  border-radius: 3px 3px 0 0;
 
-    .box-service:hover & {
-        background-color: $color-main;
-        color: #fff;
-    }
+  .box-service:hover & {
+    background-color: $color-main;
+    color: #fff;
+  }
 }

@@ -1,6 +1,11 @@
 button {
-    color: inherit;
-    border: 0;
-    background: transparent;
-    cursor: pointer;
+  font: inherit;
+  color: inherit;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
 }

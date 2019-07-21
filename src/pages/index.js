@@ -1,20 +1,36 @@
 import React from "react"
-import { Link } from "gatsby"
 
-import mainSlider from "../sections/mainSlider"
+import About from "../sections/about"
+import Addition from "../sections/addition"
+import Citation from "../sections/citation"
+import Contact from "../sections/contact"
+import Development from "../sections/development"
+import Logos from "../sections/logos"
+import MainSlider from "../sections/mainSlider"
+import News from "../sections/news"
+import Portfolio from "../sections/portfolio"
+import Services from "../sections/services"
+import Stats from "../sections/stats"
+import Testimonials from "../sections/testimonials"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
-  <Layout>
+  <Layout headerClassName="page-header--fixed">
     <SEO title="Home" />
-    <mainSlider />
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <MainSlider />
+    <About />
+    <Development />
+    <Portfolio />
+    <Stats />
+    <News />
+    <Citation />
+    <Services />
+    <Addition />
+    <Testimonials />
+    <Logos />
+    <Contact />
   </Layout>
 )
 

@@ -1,13 +1,15 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
 import Footer from "./footer"
 import Header from "./header"
 
+import "@fortawesome/fontawesome-free/css/all.css"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 import "../scss/main.scss"
 
-const Layout = ({ children }) => {
+const Layout = ({ headerClassName, children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -20,8 +22,11 @@ const Layout = ({ children }) => {
 
   return (
     <div className="content-all">
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <main>{children}</main>
+      <Header
+        className={headerClassName}
+        siteTitle={data.site.siteMetadata.title}
+      />
+      <main className="content-main">{children}</main>
       <Footer />
     </div>
   )
