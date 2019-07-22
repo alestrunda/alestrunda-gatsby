@@ -1,3 +1,4 @@
+const POSTS_PER_PAGE = 9
 const path = require(`path`)
 
 exports.createPages = ({ actions, graphql }) => {
@@ -27,7 +28,22 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-    return result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const posts = result.data.allMarkdownRemark.edges
+    const numPages = Math.ceil(posts.length / POSTS_PER_PAGE)
+    Array.from({ length: numPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+        component: path.resolve("./src/templates/blog.js"),
+        context: {
+          limit: POSTS_PER_PAGE,
+          skip: i * POSTS_PER_PAGE,
+          numPages,
+          currentPage: i + 1,
+        },
+      })
+    })
+
+    return posts.forEach(({ node }) => {
       createPage({
         path: node.frontmatter.path,
         component: postTemplate,

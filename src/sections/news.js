@@ -9,7 +9,7 @@ const ANIM_DELAY_STEP = 150
 const News = () => (
   <StaticQuery
     query={graphql`
-      query Posts {
+      query PostsFeatured {
         allMarkdownRemark(
           filter: { fileAbsolutePath: { regex: "/posts/" } }
           sort: { order: DESC, fields: [frontmatter___date] }

@@ -23,7 +23,8 @@ const ArticlePreview = ({ author, date, excerpt, image, title, url }) => (
     {excerpt}
     <p className="text-right">
       <Link className="link-read-more" to={url}>
-        Read more<i className="fas fa-angle-double-right ml5"></i>
+        Read more
+        <i className="fas fa-angle-double-right link-read-more__icon"></i>
       </Link>
     </p>
   </div>

@@ -75,6 +75,15 @@
   }
 }
 
+.link-read-more__icon {
+  transition: transform 0.2s ease-out;
+  margin-left: 5px;
+
+  .link-read-more:hover & {
+    transform: translateX(3px);
+  }
+}
+
 .link-regular {
   color: $color-main;
   text-decoration: none;
