@@ -2,6 +2,7 @@ a {
   color: $color-main;
   text-decoration: none;
   transition: all 0.2s ease-out;
+  cursor: pointer;
 
   &:focus {
     outline: none;
