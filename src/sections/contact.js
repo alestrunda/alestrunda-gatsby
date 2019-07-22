@@ -15,7 +15,7 @@ const Contact = () => (
         </div>
         <div className="grid grid--center">
           <InViewAnim
-            className="grid__item grid__item--lg-span-6"
+            className="grid__item grid__item--xl-span-6 grid__item--lg-span-8"
             animation="anim-fade-in"
           >
             {() => (

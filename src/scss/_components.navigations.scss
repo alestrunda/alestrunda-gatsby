@@ -14,8 +14,6 @@
 
 .nav-main {
   font-weight: 600;
-  float: right;
-  @include clearfix;
 
   a {
     color: inherit;
@@ -34,19 +32,15 @@
     }
   }
 
-  li {
-    float: left;
-
-    @include break(lg) {
-      float: none;
-    }
-  }
-
   ul {
+    display: flex;
     margin: 10px 0;
     padding: 0;
     list-style: none;
-    overflow: hidden;
+
+    @include break(lg) {
+      display: block;
+    }
   }
 
   @include break-min(lg) {
@@ -54,12 +48,11 @@
   }
 
   @include break(lg) {
+    width: 100%;
     display: none;
-    float: none;
     max-height: calc(100vh - 106px);
-    overflow: auto;
-    clear: both;
     text-align: center;
+    overflow: auto;
   }
 }
 

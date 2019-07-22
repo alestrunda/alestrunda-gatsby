@@ -23,7 +23,7 @@ const News = () => (
                 date(formatString: "MMMM DD, YYYY")
                 image {
                   childImageSharp {
-                    fluid(maxWidth: 630) {
+                    fluid(maxWidth: 710) {
                       ...GatsbyImageSharpFluid
                     }
                   }

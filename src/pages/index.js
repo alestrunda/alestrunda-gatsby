@@ -12,12 +12,16 @@ import Portfolio from "../sections/portfolio"
 import Services from "../sections/services"
 import Stats from "../sections/stats"
 import Testimonials from "../sections/testimonials"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { menuIndex } from "../menuItems"
 
 const IndexPage = () => (
-  <Layout headerClassName="page-header--fixed">
+  <Layout
+    activePath="top"
+    headerClassName="page-header--fixed"
+    menuItems={menuIndex}
+  >
     <SEO title="Home" />
     <MainSlider />
     <About />
