@@ -41,7 +41,7 @@ const Work = ({
                 data-title="List of all pages"
                 rel="nofollow"
               >
-                <i className="icon-box__icon fa fa-file-text-o"></i>
+                <i className="icon-box__icon fas fa-file-alt"></i>
               </a>
             )}
             {urlLive && (
