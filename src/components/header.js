@@ -4,8 +4,10 @@ import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import classNames from "classnames"
+import Menu from "../components/menu"
 
 const Header = ({ activePath, className, items, siteTitle }) => {
+  const scrollOffset = -70
   const [isMenuVisible, setMenuVisibility] = useState(false)
 
   const data = useStaticQuery(graphql`
@@ -46,20 +48,11 @@ const Header = ({ activePath, className, items, siteTitle }) => {
           className="nav-main"
           style={{ display: isMenuVisible ? "block" : "none" }}
         >
-          <ul>
-            {items.map(item => {
-              return (
-                <li
-                  key={item.props.to}
-                  className={classNames({
-                    active: item.props.to === activePath,
-                  })}
-                >
-                  {item}
-                </li>
-              )
-            })}
-          </ul>
+          <Menu
+            activePath={activePath}
+            items={items}
+            scrollOffset={scrollOffset}
+          />
         </nav>
       </div>
     </header>
