@@ -7,7 +7,7 @@ import classNames from "classnames"
 import Menu from "../components/menu"
 
 const Header = ({ activePath, className, items, siteTitle }) => {
-  const scrollOffset = -70
+  const scrollOffset = -65
   const [isMenuVisible, setMenuVisibility] = useState(false)
 
   const data = useStaticQuery(graphql`
