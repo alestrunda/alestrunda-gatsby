@@ -26,6 +26,10 @@ const Header = ({ activePath, className, items, siteTitle }) => {
     setMenuVisibility(!isMenuVisible)
   }
 
+  const handleItemClick = () => {
+    setMenuVisibility(false) //make sure to close menu after clicked on menu item
+  }
+
   return (
     <header className={classNames("page-header", className)}>
       <div className="container page-header-inner">
@@ -51,6 +55,7 @@ const Header = ({ activePath, className, items, siteTitle }) => {
           <Menu
             activePath={activePath}
             items={items}
+            onItemClick={handleItemClick}
             scrollOffset={scrollOffset}
           />
         </nav>

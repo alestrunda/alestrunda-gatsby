@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import classNames from "classnames"
 import { Link as LinkScroll } from "react-scroll"
 
-const Menu = ({ activePath, items, scrollOffset }) => (
+const Menu = ({ activePath, items, onItemClick, scrollOffset }) => (
   <ul>
     {items.map(item => {
       const { to, text, ...rest } = item
@@ -20,7 +20,7 @@ const Menu = ({ activePath, items, scrollOffset }) => (
             active: to === activePath,
           })}
         >
-          <Component to={to} {...extraProps} {...rest}>
+          <Component to={to} onClick={onItemClick} {...extraProps} {...rest}>
             <div className="nav-main__link">{text}</div>
           </Component>
         </li>
