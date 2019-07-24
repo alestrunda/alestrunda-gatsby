@@ -21,7 +21,7 @@ const Menu = ({ activePath, items, scrollOffset }) => (
           })}
         >
           <Component to={to} {...extraProps} {...rest}>
-            {text}
+            <div className="nav-main__link">{text}</div>
           </Component>
         </li>
       )
