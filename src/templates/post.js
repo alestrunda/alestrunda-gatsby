@@ -21,8 +21,9 @@ const Post = ({ data }) => {
           <div className="grid grid--big post-full">
             <div className="grid__item grid__item--lg-span-6">
               <Img
-                fluid={frontmatter.image.childImageSharp.fluid}
+                alt={frontmatter.title}
                 className="img-responsive post-full__img"
+                fluid={frontmatter.image.childImageSharp.fluid}
               />
             </div>
             <div className="grid__item grid__item--lg-span-6">

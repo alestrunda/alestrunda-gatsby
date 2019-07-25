@@ -5,7 +5,11 @@ import Img from "gatsby-image"
 const ArticlePreview = ({ author, date, excerpt, image, title, url }) => (
   <div className="post-article">
     <Link to={url}>
-      <Img fluid={image} className="post-article__photo img-responsive" />
+      <Img
+        fluid={image}
+        className="post-article__photo img-responsive"
+        alt={title}
+      />
     </Link>
     <h2 className="post-article__title">
       <Link className="link-clean" to={url}>

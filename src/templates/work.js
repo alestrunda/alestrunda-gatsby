@@ -21,8 +21,9 @@ const Work = ({ data }) => {
           <div className="grid grid--big">
             <div className="grid__item grid__item--lg-span-7">
               <Img
-                fluid={frontmatter.image.childImageSharp.fluid}
+                alt={frontmatter.title}
                 className="img-responsive"
+                fluid={frontmatter.image.childImageSharp.fluid}
               />
             </div>
             <div className="grid__item grid__item--lg-span-5 grid__item--break-md-30">

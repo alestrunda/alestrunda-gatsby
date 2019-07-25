@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Aleš Trunda`,
-    description: `Aleš Trunda freelancer, front-end developer, focusing on React`,
+    description: `Aleš Trunda freelancer, front-end developer, focusing on React. I also develop WordPress themes, e-shops and mobile applications.`,
     author: `Aleš Trunda`,
   },
   plugins: [
@@ -69,8 +69,5 @@ module.exports = {
         icon: `src/images/favicon_152.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
