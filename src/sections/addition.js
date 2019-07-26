@@ -20,49 +20,55 @@ const Addition = () => (
                 animation="anim-list-check"
                 element="li"
               >
-                {() => <div>5+ years since I started making websites</div>}
+                {() => <>5+ years since I started making websites</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
                 animation="anim-list-check"
+                element="li"
                 delay="250"
               >
-                {() => <div>3+ years working as freelancer</div>}
+                {() => <>3+ years working as freelancer</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
                 animation="anim-list-check"
+                element="li"
                 delay="450"
               >
-                {() => <div>university education in IT</div>}
+                {() => <>university education in IT</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
                 animation="anim-list-check"
+                element="li"
                 delay="300"
               >
-                {() => <div>externally working for several web studios</div>}
+                {() => <>externally working for several web studios</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
                 animation="anim-list-check"
+                element="li"
                 delay="350"
               >
-                {() => <div>mobile app on Google Play</div>}
+                {() => <>mobile app on Google Play</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
                 animation="anim-list-check"
+                element="li"
                 delay="400"
               >
-                {() => <div>6 templates on ThemeForest</div>}
+                {() => <>6 templates on ThemeForest</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
                 animation="anim-list-check"
+                element="li"
                 delay="500"
               >
-                {() => <div>regulary following news on web development</div>}
+                {() => <>regulary following news on web development</>}
               </InViewAnim>
             </ul>
           </div>
@@ -71,51 +77,58 @@ const Addition = () => (
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
                 animation="anim-list-check"
+                element="li"
                 delay="250"
               >
-                {() => <div>available for full-time jobs</div>}
+                {() => <>available for full-time jobs</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
                 animation="anim-list-check"
+                element="li"
                 delay="300"
               >
-                {() => <div>available for long-term projects</div>}
+                {() => <>available for long-term projects</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
                 animation="anim-list-check"
+                element="li"
                 delay="350"
               >
-                {() => <div>every day on email</div>}
+                {() => <>every day on email</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
                 animation="anim-list-check"
+                element="li"
                 delay="400"
               >
-                {() => <div>used to finish projects entirely</div>}
+                {() => <>used to finish projects entirely</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
                 animation="anim-list-check"
+                element="li"
                 delay="450"
               >
-                {() => <div>team player</div>}
+                {() => <>team player</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
                 animation="anim-list-check"
+                element="li"
                 delay="550"
               >
-                {() => <div>wiling to relocate</div>}
+                {() => <>wiling to relocate</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
                 animation="anim-list-check"
+                element="li"
                 delay="550"
               >
-                {() => <div>8 hours per week self-studying</div>}
+                {() => <>8 hours per week self-studying</>}
               </InViewAnim>
             </ul>
           </div>
