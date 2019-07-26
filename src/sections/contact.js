@@ -80,7 +80,9 @@ const Contact = () => {
                   </IconOpeningSmall>
                   <IconOpeningSmall iconClassName="fa fa-list-alt">
                     Registration number (IČ): 03322823. I'm not VAT (DPH)
-                    registered. Entrepreneur registered in trade licence record.
+                    registered.
+                    <br />
+                    Entrepreneur registered in trade licence record.
                   </IconOpeningSmall>
                 </>
               )}
