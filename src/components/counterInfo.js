@@ -2,14 +2,21 @@ import React from "react"
 import classNames from "classnames"
 import CountUp from "react-countup"
 
-const CounterInfo = ({ duration, iconClassName, started, text, value }) => (
+const CounterInfo = ({
+  delay,
+  duration,
+  iconClassName,
+  started,
+  text,
+  value,
+}) => (
   <div className="box-info">
     <p className="box-info__val">
       {value === 0 && 0}
       {value > 0 && (
         <>
           {!started && 0}
-          {started && <CountUp end={value} duration={duration} />}
+          {started && <CountUp end={value} delay={delay} duration={duration} />}
         </>
       )}
     </p>
@@ -23,7 +30,8 @@ const CounterInfo = ({ duration, iconClassName, started, text, value }) => (
 )
 
 CounterInfo.defaultProps = {
-  duration: 3, //sec
+  delay: 0.3, //sec
+  duration: 5, //sec
 }
 
 export default CounterInfo

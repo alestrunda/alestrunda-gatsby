@@ -26,7 +26,7 @@ const Stats = () => (
                 text="satisfied clients"
                 value={62}
                 started={isAnimated}
-                duration={4}
+                duration={6}
               />
             )}
           </InViewAnim>
