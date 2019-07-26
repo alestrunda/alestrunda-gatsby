@@ -30,7 +30,7 @@ function SEO({ description, lang, meta, title }) {
       link={[
         {
           href:
-            "https://fonts.googleapis.com/css?family=Raleway:300,400,600,700&display=swap&subset=latin-ext",
+            "https://fonts.googleapis.com/css?family=Raleway:300,400,600,700&display=swap",
           rel: "stylesheet",
         },
       ]}
