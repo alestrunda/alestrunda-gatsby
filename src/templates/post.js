@@ -3,11 +3,15 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import PostNavigation from "../components/postNavigation"
 import { menuPage } from "../menuItems"
 
-const Post = ({ data }) => {
-  const { markdownRemark } = data
-  const { frontmatter, html } = markdownRemark
+const Post = ({
+  data: {
+    markdownRemark: { frontmatter, html },
+  },
+  pageContext,
+}) => {
   return (
     <Layout menuItems={menuPage} activePath="/blog/">
       <SEO title={frontmatter.title} />
@@ -18,6 +22,7 @@ const Post = ({ data }) => {
       </div>
       <div className="section-light section-content section-content--mid section-content--top-small section-content--sm-bottom-small">
         <div className="container">
+          <PostNavigation prev={pageContext.prev} next={pageContext.next} />
           <div className="grid grid--big post-full">
             <div className="grid__item grid__item--lg-span-6">
               <Img

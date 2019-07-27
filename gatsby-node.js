@@ -7,7 +7,7 @@ exports.createPages = ({ actions, graphql }) => {
   const postTemplate = path.resolve(`src/templates/post.js`)
   const workTemplate = path.resolve(`src/templates/work.js`)
 
-  const posts = graphql(`
+  const postsQuery = graphql(`
     {
       allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/posts/" } }
@@ -18,6 +18,7 @@ exports.createPages = ({ actions, graphql }) => {
           node {
             frontmatter {
               path
+              title
             }
           }
         }
@@ -30,32 +31,38 @@ exports.createPages = ({ actions, graphql }) => {
 
     const posts = result.data.allMarkdownRemark.edges
     const numPages = Math.ceil(posts.length / POSTS_PER_PAGE)
-    Array.from({ length: numPages }).forEach((_, i) => {
+    Array.from({ length: numPages }).forEach((_, index) => {
       createPage({
-        path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+        path: index === 0 ? `/blog` : `/blog/${index + 1}`,
         component: path.resolve("./src/templates/blog.js"),
         context: {
           limit: POSTS_PER_PAGE,
-          skip: i * POSTS_PER_PAGE,
+          skip: index * POSTS_PER_PAGE,
           numPages,
-          currentPage: i + 1,
+          currentPage: index + 1,
         },
       })
     })
 
-    return posts.forEach(({ node }) => {
+    return posts.forEach(({ node }, index) => {
       createPage({
         path: node.frontmatter.path,
         component: postTemplate,
-        context: {}, // additional data can be passed via context
+        context: {
+          prev: index === 0 ? null : posts[index - 1].node,
+          next: index === posts.length - 1 ? null : posts[index + 1].node,
+        },
       })
     })
   })
 
-  const works = graphql(`
+  const worksQuery = graphql(`
     {
       allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/works/" } }
+        filter: {
+          fileAbsolutePath: { regex: "/works/" }
+          frontmatter: { published: { eq: "true" } }
+        }
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
       ) {
@@ -63,6 +70,7 @@ exports.createPages = ({ actions, graphql }) => {
           node {
             frontmatter {
               path
+              title
             }
           }
         }
@@ -73,14 +81,18 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-    return result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const works = result.data.allMarkdownRemark.edges
+    return works.forEach(({ node }, index) => {
       createPage({
         path: node.frontmatter.path,
         component: workTemplate,
-        context: {}, // additional data can be passed via context
+        context: {
+          prev: index === 0 ? null : works[index - 1].node,
+          next: index === works.length - 1 ? null : works[index + 1].node,
+        },
       })
     })
   })
 
-  return Promise.all([posts, works])
+  return Promise.all([postsQuery, worksQuery])
 }

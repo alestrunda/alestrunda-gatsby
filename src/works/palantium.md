@@ -1,5 +1,5 @@
 ---
-date: "2019-06-17"
+date: "2014-01-01"
 excerpt: "Template for industrial web. Multiple skins ready - check the template customizer, one-page layout included. Available for sale - contact me."
 image: "../images/works/palantium.jpg"
 imageFull: "../images/works/palantium-full.jpg"
