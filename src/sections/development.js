@@ -1,12 +1,11 @@
 import React from "react"
+import Img from "gatsby-image"
+import { StaticQuery, graphql } from "gatsby"
 import InViewAnim from "../components/inViewAnim"
 
-const Development = () => (
-  <section
-    id="development"
-    className="bg-parallax bg-development"
-    data-stellar-background-ratio="0.4"
-  >
+const Development = ({ bgImage }) => (
+  <section id="development" className="bg-wrapper">
+    <Img fluid={bgImage} className="bg-img" alt="" />
     <div className="section-dark section-content">
       <div className="container text-center">
         <header className="heading-box">
@@ -69,4 +68,21 @@ const Development = () => (
   </section>
 )
 
-export default Development
+export default () => (
+  <StaticQuery
+    query={graphql`
+      query {
+        bgImage: file(relativePath: { eq: "bg_development_1920.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 1920) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    `}
+    render={data => (
+      <Development bgImage={data.bgImage.childImageSharp.fluid} />
+    )}
+  />
+)

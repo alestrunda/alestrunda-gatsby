@@ -6,10 +6,6 @@
   }
 }
 
-.bg-citation {
-  background-image: url("../images/bg_citation_1920.jpg");
-}
-
 .bg-contact {
   background-image: url("../images/bg_contact_960.jpg");
 
@@ -18,8 +14,14 @@
   }
 }
 
-.bg-development {
-  background-image: url("../images/bg_development_1920.jpg");
+.bg-img {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  @include z-index(below);
 }
 
 .bg-fixed {
@@ -33,19 +35,8 @@
   }
 }
 
-.bg-parallax {
+.bg-wrapper {
   position: relative;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 0;
-
-  html.touch & {
-    background-attachment: scroll;
-    background-position: center;
-    background-size: cover;
-  }
-}
-
-.bg-stats {
-  background-image: url("../images/bg_stats_1920.jpg");
+  overflow: hidden;
+  @include z-index(above);
 }

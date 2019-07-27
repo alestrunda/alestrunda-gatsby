@@ -251,10 +251,7 @@
   min-height: calc(100vh - 106px);
   align-items: center;
   justify-content: center;
-  background-image: url("../images/bg_front_960.jpg");
   text-align: center;
-  background-position: left top;
-  background-size: cover;
   color: #fff;
   padding-top: 70px;
   padding-bottom: 150px;
@@ -269,10 +266,6 @@
     background-color: rgba(0, 0, 0, 0.7);
     content: "";
     @include z-index(below);
-  }
-
-  @include break-min(backgrounds) {
-    background-image: url("../images/bg_front_1920.jpg");
   }
 
   @include break(lg) {

@@ -1,12 +1,47 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
+import { StaticQuery, graphql } from "gatsby"
 import Citation from "../components/citation"
 
-const CitationSection = () => {
-  const results = useStaticQuery(
-    graphql`
-      query Quotes {
-        allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/quotes/" } }) {
+const CitationSection = ({ bgImage, quoteEdges }) => {
+  const quote = quoteEdges[Math.floor(Math.random() * quoteEdges.length)]
+
+  return (
+    <div id="citation" className="bg-wrapper">
+      <Img fluid={bgImage} className="bg-img" alt="" />
+      <div className="section-dark section-content">
+        <div className="container text-center">
+          {quote && (
+            <Citation
+              author={quote.node.frontmatter.author}
+              content={quote.node.rawMarkdownBody.trim()}
+              className="citation--huge text-white"
+            />
+          )}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+CitationSection.defaultProps = {
+  quoteEdges: [],
+}
+
+export default () => (
+  <StaticQuery
+    query={graphql`
+      query {
+        bgImage: file(relativePath: { eq: "bg_citation_1920.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 1920) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        quotes: allMarkdownRemark(
+          filter: { fileAbsolutePath: { regex: "/quotes/" } }
+        ) {
           edges {
             node {
               rawMarkdownBody
@@ -17,30 +52,12 @@ const CitationSection = () => {
           }
         }
       }
-    `
-  )
-  const quote =
-    results.allMarkdownRemark.edges[
-      Math.floor(Math.random() * results.allMarkdownRemark.edges.length)
-    ]
-
-  return (
-    <div
-      id="citation"
-      className="bg-parallax bg-citation"
-      data-stellar-background-ratio="0.4"
-    >
-      <div className="section-dark section-content">
-        <div className="container text-center">
-          <Citation
-            author={quote.node.frontmatter.author}
-            content={quote.node.rawMarkdownBody.trim()}
-            className="citation--huge text-white"
-          />
-        </div>
-      </div>
-    </div>
-  )
-}
-
-export default CitationSection
+    `}
+    render={data => (
+      <CitationSection
+        bgImage={data.bgImage.childImageSharp.fluid}
+        quoteEdges={data.quotes.edges}
+      />
+    )}
+  />
+)

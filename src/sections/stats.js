@@ -1,13 +1,12 @@
 import React from "react"
+import Img from "gatsby-image"
+import { StaticQuery, graphql } from "gatsby"
 import CounterInfo from "../components/counterInfo"
 import InViewAnim from "../components/inViewAnim"
 
-const Stats = () => (
-  <section
-    id="stats"
-    className="bg-parallax bg-stats"
-    data-stellar-background-ratio="0.4"
-  >
+const Stats = ({ bgImage }) => (
+  <section id="stats" className="bg-wrapper">
+    <Img fluid={bgImage} className="bg-img" alt="" />
     <div className="section-dark section-content">
       <div className="container text-center">
         <header className="heading-box">
@@ -75,4 +74,19 @@ const Stats = () => (
   </section>
 )
 
-export default Stats
+export default () => (
+  <StaticQuery
+    query={graphql`
+      query {
+        bgImage: file(relativePath: { eq: "bg_stats_1920.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 1920) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    `}
+    render={data => <Stats bgImage={data.bgImage.childImageSharp.fluid} />}
+  />
+)
