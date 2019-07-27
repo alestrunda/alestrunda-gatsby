@@ -20,7 +20,9 @@ const Work = ({
         <div className="work-item__content">
           <div className="decoration-border decoration-border--top"></div>
           <div className="decoration-border decoration-border--bottom"></div>
-          <h4 className="work-item__title">{title}</h4>
+          <h4 className="work-item__title">
+            <Link to={path}>{title}</Link>
+          </h4>
           <p>
             <em>{content}</em>
           </p>
