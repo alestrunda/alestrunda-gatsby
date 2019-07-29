@@ -1,9 +1,18 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import Img from "gatsby-image"
 import { InView } from "react-intersection-observer"
 
+//has to be outside, because we need to keep referecence to this same function for addEventListener and removeEventListener
+let handleScroll = func => {
+  func(window.pageYOffset)
+}
+
 const ParallaxBackground = ({ bgImage, children, rate }) => {
   const [scrollTop, setScrollTop] = useState(0)
+
+  useEffect(() => {
+    handleScroll = handleScroll.bind(null, setScrollTop)
+  }, [])
 
   const handleViewChange = inView => {
     if (inView) {
@@ -13,9 +22,7 @@ const ParallaxBackground = ({ bgImage, children, rate }) => {
     }
   }
 
-  const handleScroll = () => {
-    setScrollTop(window.pageYOffset)
-  }
+  //on use effect unmount zrušit window.removeEventListener("scroll", handleScroll)
 
   return (
     <InView className="bg-wrapper" onChange={handleViewChange}>
