@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+import ImageLightbox from "../components/imageLightbox"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 import PostNavigation from "../components/postNavigation"
+import SEO from "../components/seo"
 import { menuPage } from "../menuItems"
 
 const Work = ({
@@ -25,51 +25,51 @@ const Work = ({
           <PostNavigation prev={pageContext.prev} next={pageContext.next} />
           <div className="grid grid--big">
             <div className="grid__item grid__item--lg-span-7">
-              <Img
+              <ImageLightbox
                 alt={frontmatter.title}
-                className="img-responsive"
-                fluid={frontmatter.image.childImageSharp.fluid}
+                imageFluid={frontmatter.image.childImageSharp.fluid}
+                imageFull={frontmatter.imageFull.childImageSharp.fluid.src}
               />
             </div>
             <div className="grid__item grid__item--lg-span-5 grid__item--break-md-30">
               <div dangerouslySetInnerHTML={{ __html: html }} />
-              <div class="m20"></div>
-              <h4 class="text-uppercase">Project details</h4>
-              <div class="m5"></div>
-              <strong class="text-black">Date:</strong> {frontmatter.date}
+              <div className="m20"></div>
+              <h4 className="text-uppercase">Project details</h4>
+              <div className="m5"></div>
+              <strong className="text-black">Date:</strong> {frontmatter.date}
               <br />
-              <div class="m5"></div>
+              <div className="m5"></div>
               {frontmatter.technologies && (
                 <>
-                  <strong class="text-black">Technologies:</strong>{" "}
+                  <strong className="text-black">Technologies:</strong>{" "}
                   {frontmatter.technologies}
-                  <div class="m5"></div>
+                  <div className="m5"></div>
                 </>
               )}
               {frontmatter.client && (
                 <>
-                  <strong class="text-black">Client:</strong>{" "}
+                  <strong className="text-black">Client:</strong>{" "}
                   {frontmatter.client}
-                  <div class="m5"></div>
+                  <div className="m5"></div>
                 </>
               )}
               {frontmatter.urlGithub && (
                 <>
-                  <strong class="text-black">Github:</strong>{" "}
+                  <strong className="text-black">Github:</strong>{" "}
                   <a href={frontmatter.urlGithub}>{frontmatter.urlGithub}</a>
-                  <div class="m5"></div>
+                  <div className="m5"></div>
                 </>
               )}
               {frontmatter.urlLive && (
                 <>
-                  <strong class="text-black">Website:</strong>{" "}
+                  <strong className="text-black">Website:</strong>{" "}
                   <a
                     href={frontmatter.urlLive}
                     rel={frontmatter.urlNoFollow ? "nofollow" : ""}
                   >
                     {frontmatter.urlLive}
                   </a>
-                  <div class="m5"></div>
+                  <div className="m5"></div>
                 </>
               )}
             </div>
@@ -90,6 +90,13 @@ export const pageQuery = graphql`
         image {
           childImageSharp {
             fluid(maxWidth: 600) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        imageFull {
+          childImageSharp {
+            fluid(maxWidth: 1920) {
               ...GatsbyImageSharpFluid
             }
           }

@@ -7,6 +7,7 @@ import Header from "./header"
 import "@fortawesome/fontawesome-free/css/all.css"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import "react-image-lightbox/style.css"
 import "../scss/main.scss"
 
 const Layout = ({ activePath, children, headerClassName, menuItems }) => {
