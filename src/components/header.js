@@ -14,7 +14,7 @@ const Header = ({ activePath, className, items, siteTitle }) => {
     query {
       logo: file(relativePath: { eq: "logo.jpg" }) {
         childImageSharp {
-          fixed(width: 46, height: 46) {
+          fixed(width: 46, height: 46, quality: 90) {
             ...GatsbyImageSharpFixed
           }
         }

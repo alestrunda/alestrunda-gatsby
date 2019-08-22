@@ -114,14 +114,14 @@ export default props => (
                 excerpt
                 image {
                   childImageSharp {
-                    fluid(maxWidth: 552) {
+                    fluid(maxWidth: 552, quality: 90) {
                       ...GatsbyImageSharpFluid
                     }
                   }
                 }
                 imageFull {
                   childImageSharp {
-                    fluid(maxWidth: 1920) {
+                    fluid(maxWidth: 1920, quality: 90) {
                       ...GatsbyImageSharpFluid
                     }
                   }
