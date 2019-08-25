@@ -34,12 +34,20 @@
   color: $color-silver;
 }
 
+.text-silver2 {
+  color: $color-silver2;
+}
+
 .text-small {
   font-size: 10px;
 }
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.text-w-normal {
+  font-weight: 400;
 }
 
 .text-white {

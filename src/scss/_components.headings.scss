@@ -76,3 +76,15 @@
     font-size: 19px;
   }
 }
+
+.heading-sub {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 21px;
+  font-weight: normal;
+
+  @include break(md) {
+    font-size: 19px;
+    margin-bottom: 40px;
+  }
+}

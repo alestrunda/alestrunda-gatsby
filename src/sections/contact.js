@@ -31,9 +31,14 @@ const Contact = () => {
               {() => (
                 <>
                   <p>
+                    Current status:{" "}
+                    <span class="text-white">available for hire</span>.
+                  </p>
+                  <p>
                     Want to start a new project with my or have a general
-                    question? Please just fill the form and I'll get back to you
-                    in a flash of an eye. Looking forward to hear from you.
+                    question? Please don't hesitate to contact me and I'll get
+                    back to you in a flash of an eye. Looking forward to hear
+                    from you.
                   </p>
                   <div className="m40"></div>
                   <IconOpeningSmall iconClassName="fa fa-home">
@@ -43,7 +48,7 @@ const Contact = () => {
                     Email: <a href={`mailto:${myEmail}`}>{myEmail}</a>
                   </IconOpeningSmall>
                   <IconOpeningSmall iconClassName="fa fa-phone">
-                    Mobile: +420 606 516 133
+                    Mobile: <a href={`tel:+420606516133`}>+420 606 516 133</a>
                   </IconOpeningSmall>
                   <IconOpeningSmall iconClassName="fab fa-skype">
                     Skype: alestrunda,{" "}

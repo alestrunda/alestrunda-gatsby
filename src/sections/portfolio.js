@@ -63,7 +63,7 @@ class Portfolio extends React.Component {
               <div className="decoration-border decoration-border--bottom decoration-border--tiny"></div>
               <h1 className="heading-box__title">Portfolio</h1>
             </header>
-            <h3>Selected Works</h3>
+            <h3 className="heading-sub">Selected Works</h3>
           </div>
           <div className="text-center">
             <Filter
