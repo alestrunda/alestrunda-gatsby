@@ -13,6 +13,10 @@ urlLive: "https://vocabulary-scholar.herokuapp.com"
 
 Educational app for learning english dictionary. Consists of three parts - web app (react), mobile app (react native, Android only) and server part (node.js, mongodb, REST API).
 
+Made for my bachelor's thesis, graded A so I suppose it was quite fine.
+
+You can use it to, it's available as native app for mobile (Android only) and web app in web browser.
+
 <a href="https://vocabulary-scholar.herokuapp.com/">Web app (EN)</a>
 
 <a href="https://play.google.com/store/apps/details?id=cz.alestrunda.vocabularyscholar">Mobile app (EN) on Google Play</a>
