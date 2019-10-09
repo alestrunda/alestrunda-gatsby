@@ -2,7 +2,7 @@
 author: "Aleš Trunda"
 date: "2019-10-03"
 path: "/blog/pexeso/"
-image: "../images/works/pexeso.jpg"
+image: "../images/news/pexeso.jpg"
 title: "Pexeso"
 ---
 
