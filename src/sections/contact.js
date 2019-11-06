@@ -62,7 +62,7 @@ const Contact = () => {
                   <IconOpeningSmall iconClassName="fab fa-linkedin">
                     <a
                       className="link-hover-white"
-                      href="https://www.linkedin.com/in/aleš-trunda-22476510b"
+                      href="https://www.linkedin.com/in/ale%C5%A1-trunda/"
                     >
                       LinkedIn
                     </a>
