@@ -10,7 +10,7 @@ You can find plenty articles about how it's important to keep your workspace cle
 
 There is lot of wallpapers with quotes, but that might not fit everyone - what if you don't like the picture or the quote position or the text size, well there's nothing you can do. But there's a better way, use Rainmeter that can create separate layer for the quote over the wallpaper. So you may freely change the wallpaper without affecting the quote.
 
-The quotes need some styling and positioning, that's why I keep my favourite quotes styled in Rainmeter skin, you get it from my GitHub.
+The quotes need some styling and positioning, that's why I keep my favourite quotes styled in Rainmeter skin, you get it from my [GitHub](https://github.com/alestrunda/static-quotes).
 
 I've styled more than 50 quotes. First you will need add the skin - in directory *User/Documents/Rainmeter/Skins* create folder *StaticQuote* and put the *.ini* file in it. Activate the skin in Rainmeter. Then simply pick one quote, uncomment (remove *;* characters at the beginning of each line) its parts, comment out the previous one and refresh Rainmeter.
 
