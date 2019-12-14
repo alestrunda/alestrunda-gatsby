@@ -10,7 +10,7 @@ const Contact = () => {
     const emailName = "alestrunda"
     const emailProvider = "gmail.com"
     setMyEmail(`${emailName}@${emailProvider}`)
-  })
+  }, [setMyEmail])
 
   return (
     <section id="contact" className="bg-contact bg-fixed">

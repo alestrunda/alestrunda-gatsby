@@ -13,9 +13,9 @@ const ImageLightbox = ({ alt, imageFluid, imageFull }) => {
 
   return (
     <>
-      <div onClick={handleOpen} className="cursor-pointer">
+      <button onClick={handleOpen} className="cursor-pointer el-full">
         <Img className="img-responsive" alt={alt} fluid={imageFluid} />
-      </div>
+      </button>
       {isOpened && (
         <Lightbox mainSrc={imageFull} onCloseRequest={handleClose} />
       )}

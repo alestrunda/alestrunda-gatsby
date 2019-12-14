@@ -2,7 +2,7 @@ import React from "react"
 import classNames from "classnames"
 
 const ArrowDots = ({ onClick, type }) => (
-  <div
+  <button
     className={classNames(`slick-${type}`, "slider-arrow-super")}
     onClick={onClick}
   >
@@ -13,7 +13,7 @@ const ArrowDots = ({ onClick, type }) => (
     <span className="slider-arrow-super__dot slider-arrow-super__dot--5"></span>
     <span className="slider-arrow-super__dot slider-arrow-super__dot--6"></span>
     <span className="slider-arrow-super__dot slider-arrow-super__dot--7"></span>
-  </div>
+  </button>
 )
 
 export default ArrowDots
