@@ -3,7 +3,7 @@ author: "Aleš Trunda"
 date: "2019-12-14"
 path: "/blog/typescript/"
 image: "../images/news/typescript.jpg"
-title: "New Typescript out"
+title: "Typescript 3.7 is out"
 ---
 
 New version of Typescript is out. This time it comes with very interesting feature "Optional Chaining", which I've been really looking forward to. About a week ago it's been integrated into my favorite Create React App, so everything's ready to start using it.
