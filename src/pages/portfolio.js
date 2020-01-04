@@ -4,13 +4,11 @@ import SEO from "../components/seo"
 import SectionPortfolio from "../sections/portfolio"
 import { menuPage } from "../menuItems"
 
-const PortfolioPage = () => {
-  return (
-    <Layout activePath="/portfolio/" menuItems={menuPage}>
-      <SEO title="Portfolio" />
-      <SectionPortfolio />
-    </Layout>
-  )
-}
+const PortfolioPage = () => (
+  <Layout activePath="/portfolio/" menuItems={menuPage}>
+    <SEO title="Portfolio" />
+    <SectionPortfolio />
+  </Layout>
+)
 
 export default PortfolioPage

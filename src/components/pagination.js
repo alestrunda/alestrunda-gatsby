@@ -4,12 +4,14 @@ import classNames from "classnames"
 
 const Pagination = ({ current, path, total }) => {
   if (total === 1) return null
+
   return (
     <ul className="pagination">
       {Array.from({ length: total }).map((_, index) => {
         const page = index + 1
         const isActive = page === current
         const url = page === 1 ? path : `${path}${page}`
+
         return (
           <li
             className={classNames("pagination__item", {

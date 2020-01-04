@@ -11,41 +11,39 @@ const Post = ({
     markdownRemark: { frontmatter, html },
   },
   pageContext,
-}) => {
-  return (
-    <Layout menuItems={menuPage} activePath="/blog/">
-      <SEO title={frontmatter.title} />
-      <div className="page-title">
-        <div className="container">
-          <h1 className="heading-page">{frontmatter.title}</h1>
-        </div>
+}) => (
+  <Layout menuItems={menuPage} activePath="/blog/">
+    <SEO title={frontmatter.title} />
+    <div className="page-title">
+      <div className="container">
+        <h1 className="heading-page">{frontmatter.title}</h1>
       </div>
-      <div className="section-light section-content section-content--mid section-content--top-small section-content--sm-bottom-small">
-        <div className="container">
-          <PostNavigation prev={pageContext.prev} next={pageContext.next} />
-          <div className="grid grid--big post-full">
-            <div className="grid__item grid__item--lg-span-6">
-              <Img
-                alt={frontmatter.title}
-                className="img-responsive post-full__img"
-                fluid={frontmatter.image.childImageSharp.fluid}
-              />
-            </div>
-            <div className="grid__item grid__item--lg-span-6">
-              <div className="post-full__content">
-                <header>
-                  <span className="text-silver">{frontmatter.date}</span>
-                  <h2 className="post-full__title">{frontmatter.title}</h2>
-                </header>
-                <div dangerouslySetInnerHTML={{ __html: html }} />
-              </div>
+    </div>
+    <div className="section-light section-content section-content--mid section-content--top-small section-content--sm-bottom-small">
+      <div className="container">
+        <PostNavigation prev={pageContext.prev} next={pageContext.next} />
+        <div className="grid grid--big post-full">
+          <div className="grid__item grid__item--lg-span-6">
+            <Img
+              alt={frontmatter.title}
+              className="img-responsive post-full__img"
+              fluid={frontmatter.image.childImageSharp.fluid}
+            />
+          </div>
+          <div className="grid__item grid__item--lg-span-6">
+            <div className="post-full__content">
+              <header>
+                <span className="text-silver">{frontmatter.date}</span>
+                <h2 className="post-full__title">{frontmatter.title}</h2>
+              </header>
+              <div dangerouslySetInnerHTML={{ __html: html }} />
             </div>
           </div>
         </div>
       </div>
-    </Layout>
-  )
-}
+    </div>
+  </Layout>
+)
 
 export const pageQuery = graphql`
   query($path: String!) {

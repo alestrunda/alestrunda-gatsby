@@ -21,6 +21,7 @@ const Work = ({
   const handleCloseLightbox = () => {
     setLightboxOpened(false)
   }
+
   return (
     <>
       <div className="work-item">

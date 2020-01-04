@@ -4,6 +4,7 @@ import classNames from "classnames"
 
 const InViewAnim = ({ animation, children, className, delay, element }) => {
   const [isAnimated, setIsAnimated] = useState(false)
+
   return (
     <InView triggerOnce={true}>
       {({ inView, ref }) => {

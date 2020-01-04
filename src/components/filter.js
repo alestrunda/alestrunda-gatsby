@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import classNames from "classnames"
+import FilterButton from "./filterButton"
 
 const Filter = ({ activeFilter, featuredFilters, filters, onFilter }) => {
   const [showAllFilters, setFiltersVisibility] = useState(false)
@@ -23,9 +24,7 @@ const Filter = ({ activeFilter, featuredFilters, filters, onFilter }) => {
             active: !activeFilter,
           })}
         >
-          <button className="list-filters__link" onClick={() => onFilter("")}>
-            All
-          </button>
+          <FilterButton title="All" onClick={onFilter} />
         </li>
         {filtersShowed.map((filter, index) => (
           <li
@@ -34,12 +33,7 @@ const Filter = ({ activeFilter, featuredFilters, filters, onFilter }) => {
               active: activeFilter === filter,
             })}
           >
-            <button
-              className="list-filters__link"
-              onClick={() => onFilter(filter)}
-            >
-              {filter}
-            </button>
+            <FilterButton filter={filter} title={filter} onClick={onFilter} />
           </li>
         ))}
       </ul>

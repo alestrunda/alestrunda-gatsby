@@ -13,6 +13,7 @@ const Menu = ({ activePath, items, onItemClick, scrollOffset }) => (
         extraProps.offset = scrollOffset
         extraProps.smooth = true
       }
+
       return (
         <li
           key={to}

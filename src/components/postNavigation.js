@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 const PostNavigation = ({ next, prev }) => {
   if (!next && !prev) return null
+
   return (
     <div className="grid grid--small mb20">
       <div className="grid__item grid__item--xs-span-6">
