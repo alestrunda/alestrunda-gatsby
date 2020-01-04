@@ -32,7 +32,7 @@ const Contact = () => {
                 <>
                   <p>
                     Current status:{" "}
-                    <span class="text-white">available for hire</span>.
+                    <span className="text-white">available for hire</span>.
                   </p>
                   <p>
                     Want to start a new project with my or have a general
