@@ -20,7 +20,7 @@ const Addition = () => (
                 animation="anim-list-check"
                 element="li"
               >
-                {() => <>5+ years since I started making websites</>}
+                {() => <>6+ years since I started making websites</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
@@ -28,7 +28,7 @@ const Addition = () => (
                 element="li"
                 delay="250"
               >
-                {() => <>3+ years working as freelancer</>}
+                {() => <>4+ years working as freelancer</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"

@@ -23,7 +23,7 @@ const Stats = ({ bgImage }) => (
               <CounterInfo
                 iconClassName="fa fa-smile"
                 text="satisfied clients"
-                value={62}
+                value={64}
                 started={isAnimated}
                 duration={6}
               />
@@ -48,9 +48,9 @@ const Stats = ({ bgImage }) => (
           >
             {isAnimated => (
               <CounterInfo
-                iconClassName="fa fa-book"
-                text="blogs about web development I'm following"
-                value={4}
+                iconClassName="fa fa-chart-line"
+                text="years freelancing"
+                value={6}
                 started={isAnimated}
               />
             )}
