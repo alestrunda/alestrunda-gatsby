@@ -4,7 +4,7 @@ import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import classNames from "classnames"
-import Menu from "../components/menu"
+import Menu from "../Menu"
 
 const Header = ({ activePath, className, items, siteTitle }) => {
   const scrollOffset = -65

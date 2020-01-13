@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import classNames from "classnames"
-import FilterButton from "./filterButton"
+import FilterButton from "../FilterButton"
 
 const Filter = ({ activeFilter, featuredFilters, filters, onFilter }) => {
   const [showAllFilters, setFiltersVisibility] = useState(false)

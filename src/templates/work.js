@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
-import ImageLightbox from "../components/imageLightbox"
-import Layout from "../components/layout"
-import PostNavigation from "../components/postNavigation"
-import SEO from "../components/seo"
+import ImageLightbox from "../components/ImageLightbox"
+import Layout from "../components/Layout"
+import PostNavigation from "../components/PostNavigation"
+import SEO from "../components/Seo"
 import { menuPage } from "../menuItems"
 
 const Work = ({

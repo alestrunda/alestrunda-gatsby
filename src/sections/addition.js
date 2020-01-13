@@ -1,5 +1,5 @@
 import React from "react"
-import InViewAnim from "../components/inViewAnim"
+import InViewAnim from "../components/InViewAnim"
 
 const Addition = () => (
   <section id="addition" className="bg-addition bg-fixed">

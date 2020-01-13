@@ -1,5 +1,6 @@
 import React from "react"
-import InViewAnim from "../components/inViewAnim"
+import InViewAnim from "../components/InViewAnim"
+import Timeline from "../components/Timeline"
 
 const About = () => (
   <section id="about">
@@ -9,37 +10,10 @@ const About = () => (
           <header className="heading-box">
             <div className="decoration-border decoration-border--top decoration-border--tiny"></div>
             <div className="decoration-border decoration-border--bottom decoration-border--tiny"></div>
-            <h1 className="heading-box__title">Something about me</h1>
+            <h1 className="heading-box__title">About me</h1>
           </header>
         </div>
-        <div className="grid">
-          <InViewAnim
-            className="grid__item grid__item--lg-span-6"
-            animation="anim-fade-in-left"
-          >
-            {() => (
-              <p>
-                I'm web developer, more than three years I work as freelancer. I
-                made my first web pages as school project in 2006, since then I
-                participated in more than one hundred web projects.
-              </p>
-            )}
-          </InViewAnim>
-          <InViewAnim
-            className="grid__item grid__item--lg-span-6"
-            animation="anim-fade-in-right"
-          >
-            {() => (
-              <p>
-                I specialize in front-end development, however I have also
-                various back-end knowledge, especially concerning WordPress
-                development. I regularly study and follow several blogs to keep
-                up with new technologies and trends. University studies provided
-                me comprehensive programming skills.
-              </p>
-            )}
-          </InViewAnim>
-        </div>
+        <Timeline />
         <div className="grid text-center">
           <InViewAnim className="grid__item grid__item--lg-span-4" delay="100">
             {() => (

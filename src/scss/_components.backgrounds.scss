@@ -1,11 +1,3 @@
-.bg-addition {
-  background-image: url("../images/bg_addition_960.jpg");
-
-  @include break-min(backgrounds) {
-    background-image: url("../images/bg_addition_1920.jpg");
-  }
-}
-
 .bg-contact {
   background-image: url("../images/bg_contact_960.jpg");
 
@@ -30,8 +22,16 @@
   background-position: center;
   background-attachment: fixed;
 
-  html.touch & {
+  @include break(sm) {
     background-attachment: scroll;
+  }
+}
+
+.bg-services {
+  background-image: url("../images/bg_addition_960.jpg");
+
+  @include break-min(backgrounds) {
+    background-image: url("../images/bg_addition_1920.jpg");
   }
 }
 

@@ -1,0 +1,49 @@
+.date-range {
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+  background-color: $color-main;
+  color: #fff;
+  padding: 3px 10px;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    border-width: 8px 5px;
+    border-color: transparent;
+    border-style: solid;
+    content: '';
+  }
+}
+
+.date-range--left::after {
+  left: -10px;
+  border-right-color: $color-main;
+}
+
+.date-range--right::after {
+  right: -10px;
+  border-left-color: $color-main;
+}
+
+.date-range__dot {
+  width: 3px;
+  height: 3px;
+  margin-top: 4px;
+  margin-bottom: 4px;  
+  margin-left: auto;
+  margin-right: auto;
+  background-color: currentColor;
+  opacity: 0.6;
+  border-radius: 50%;
+
+  &:first-of-type {
+    margin-top: 2px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 2px;
+  }
+}

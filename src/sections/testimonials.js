@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Slider from "react-slick"
-import Citation from "../components/citation"
+import Citation from "../components/Citation"
 
 const Testimonials = () => {
   const results = useStaticQuery(

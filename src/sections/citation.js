@@ -1,7 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import { StaticQuery, graphql } from "gatsby"
-import Citation from "../components/citation"
+import Citation from "../components/Citation"
 
 const CitationSection = ({ bgImage, quoteEdges }) => {
   const quote = quoteEdges[Math.floor(Math.random() * quoteEdges.length)]

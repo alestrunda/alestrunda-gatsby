@@ -1,7 +1,7 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import SectionPortfolio from "../sections/portfolio"
+import Layout from "../components/Layout"
+import SEO from "../components/Seo"
+import SectionPortfolio from "../sections/Portfolio"
 import { menuPage } from "../menuItems"
 
 const PortfolioPage = () => (

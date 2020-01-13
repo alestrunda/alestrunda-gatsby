@@ -2,8 +2,8 @@ import React from "react"
 import Slider from "react-slick"
 import { StaticQuery, graphql } from "gatsby"
 import { Link as LinkScroll } from "react-scroll"
-import ArrowDots from "../components/arrowDots"
-import ParallaxBackground from "../components/parallaxBackground"
+import ArrowDots from "../components/ArrowDots"
+import ParallaxBackground from "../components/ParallaxBackground"
 
 const MainSlider = ({ bgImage }) => (
   <section className="section-top" id="top">

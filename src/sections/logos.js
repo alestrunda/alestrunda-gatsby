@@ -1,5 +1,5 @@
 import React from "react"
-import LogoSingle from "../components/logoSingle"
+import LogoSingle from "../components/LogoSingle"
 import Slider from "react-slick"
 
 import imgCSS from "../images/logo/css3.svg"

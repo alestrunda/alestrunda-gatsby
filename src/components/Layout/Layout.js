@@ -1,14 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Footer from "./footer"
-import Header from "./header"
+import Footer from "../Footer"
+import Header from "../Header"
 
 import "@fortawesome/fontawesome-free/css/all.css"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import "react-image-lightbox/style.css"
-import "../scss/main.scss"
+import "../../scss/main.scss"
 
 const Layout = ({ activePath, children, headerClassName, menuItems }) => {
   const data = useStaticQuery(graphql`

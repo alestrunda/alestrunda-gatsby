@@ -1,3 +1,44 @@
+.box-border {
+  display: inline-block;
+  position: relative;
+  padding: 10px 12px 8px;
+  border-radius: 10px;
+  border: 1px solid $color-border;
+  background-color: #fafafa;
+  font-size: 13px;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    width: 14px;
+    height: 14px;
+    margin-top: -7px;
+    background-color: #fafafa;
+    transform: rotate(45deg);
+    content: '';
+  }
+}
+
+.box-border--left {
+  padding-right: 16px;
+
+  &::after {
+    left: -7px;
+    border-left: inherit;
+    border-bottom: inherit;
+  }
+}
+
+.box-border--right {
+  padding-left: 16px;
+
+  &::after {
+    right: -7px;
+    border-right: inherit;
+    border-top: inherit;
+  }
+}
+
 .box-icon {
   margin-bottom: 60px;
 }

@@ -1,7 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import { StaticQuery, graphql } from "gatsby"
-import InViewAnim from "../components/inViewAnim"
+import InViewAnim from "../components/InViewAnim"
 
 const Development = ({ bgImage }) => (
   <section id="development" className="bg-wrapper">

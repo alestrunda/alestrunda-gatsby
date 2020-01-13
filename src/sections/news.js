@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import { StaticQuery, graphql } from "gatsby"
-import ArticlePreview from "../components/articlePreview"
-import InViewAnim from "../components/inViewAnim"
+import ArticlePreview from "../components/ArticlePreview"
+import InViewAnim from "../components/InViewAnim"
 
 const News = () => {
   const animDelayStep = 150

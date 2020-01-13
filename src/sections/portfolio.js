@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import Filter from "../components/filter"
-import Work from "../components/work"
+import Filter from "../components/Filter"
+import Work from "../components/Work"
 
 const featuredTechnologies = [
   "E-shop",

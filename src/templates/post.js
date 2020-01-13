@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import PostNavigation from "../components/postNavigation"
+import Layout from "../components/Layout"
+import SEO from "../components/Seo"
+import PostNavigation from "../components/PostNavigation"
 import { menuPage } from "../menuItems"
 
 const Post = ({

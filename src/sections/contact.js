@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
-import IconOpeningSmall from "../components/iconOpeningSmall"
-import InViewAnim from "../components/inViewAnim"
+import IconOpeningSmall from "../components/IconOpeningSmall"
+import InViewAnim from "../components/InViewAnim"
 
 const Contact = () => {
   const [myEmail, setMyEmail] = useState("")
@@ -84,10 +84,10 @@ const Contact = () => {
                     </a>
                   </IconOpeningSmall>
                   <IconOpeningSmall iconClassName="fa fa-list-alt">
-                    Registration number (IČ): 03322823. I'm not VAT (DPH)
-                    registered.
+                    Registration number: 03322823. VAT registration number:
+                    CZ03322823.
                     <br />
-                    Entrepreneur registered in trade licence record.
+                    Registered in public trade licence record.
                   </IconOpeningSmall>
                 </>
               )}

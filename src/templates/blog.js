@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
-import ArticlePreview from "../components/articlePreview"
-import Layout from "../components/layout"
-import Pagination from "../components/pagination"
-import SEO from "../components/seo"
+import ArticlePreview from "../components/ArticlePreview"
+import Layout from "../components/Layout"
+import Pagination from "../components/Pagination"
+import SEO from "../components/Seo"
 import { menuPage } from "../menuItems"
 
 const NewsPage = ({ data, pageContext }) => (

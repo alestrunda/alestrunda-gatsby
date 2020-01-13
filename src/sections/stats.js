@@ -1,8 +1,8 @@
 import React from "react"
 import Img from "gatsby-image"
 import { StaticQuery, graphql } from "gatsby"
-import CounterInfo from "../components/counterInfo"
-import InViewAnim from "../components/inViewAnim"
+import CounterInfo from "../components/CounterInfo"
+import InViewAnim from "../components/InViewAnim"
 
 const Stats = ({ bgImage }) => (
   <section id="stats" className="bg-wrapper">
