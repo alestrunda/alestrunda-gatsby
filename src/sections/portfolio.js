@@ -103,7 +103,7 @@ export default props => (
       query Works {
         allMarkdownRemark(
           filter: {
-            fileAbsolutePath: { regex: "/works/" }
+            fileAbsolutePath: { regex: "//works//" }
             frontmatter: { published: { eq: "true" } }
           }
           sort: { order: DESC, fields: [frontmatter___date] }

@@ -12,7 +12,7 @@ const News = () => {
       query={graphql`
         query PostsFeatured {
           allMarkdownRemark(
-            filter: { fileAbsolutePath: { regex: "/posts/" } }
+            filter: { fileAbsolutePath: { regex: "//posts//" } }
             sort: { order: DESC, fields: [frontmatter___date] }
             limit: 3
           ) {

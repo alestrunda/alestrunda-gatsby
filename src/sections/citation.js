@@ -40,7 +40,7 @@ export default () => (
           }
         }
         quotes: allMarkdownRemark(
-          filter: { fileAbsolutePath: { regex: "/quotes/" } }
+          filter: { fileAbsolutePath: { regex: "//quotes//" } }
         ) {
           edges {
             node {

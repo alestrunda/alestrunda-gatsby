@@ -8,7 +8,7 @@ const Testimonials = () => {
     graphql`
       query Testimonials {
         allMarkdownRemark(
-          filter: { fileAbsolutePath: { regex: "/testimonials/" } }
+          filter: { fileAbsolutePath: { regex: "//testimonials//" } }
           sort: { order: DESC, fields: [frontmatter___date] }
         ) {
           edges {

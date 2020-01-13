@@ -46,7 +46,7 @@ const NewsPage = ({ data, pageContext }) => (
 export const query = graphql`
   query Posts($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/posts/" } }
+      filter: { fileAbsolutePath: { regex: "//posts//" } }
       sort: { order: DESC, fields: [frontmatter___date] }
       limit: $limit
       skip: $skip
