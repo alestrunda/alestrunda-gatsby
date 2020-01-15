@@ -39,10 +39,6 @@
     color: $color-main;
     font-family: "FontAwesome";
     transition: all 0.4s ease-out;
-
-    .box-service:hover & {
-      color: #fff;
-    }
   }
 }
 

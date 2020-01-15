@@ -134,57 +134,26 @@
 
 .box-service {
   position: relative;
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: 60px;
-  text-align: center;
-  border: 1px $color-border solid;
-  border-radius: 3px;
-  transition: all 0.4s ease-out;
-
-  &:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  }
-
-  @include break(md) {
-    margin-bottom: 40px;
-  }
-}
-
-.box-service__content {
-  font-size: 13px;
-  color: $color-service;
-}
-
-.box-service__content-line {
-  padding: 8px 20px;
-  border-top: 1px $color-service-border solid;
-  border-bottom: 1px $color-service-border solid;
-  background-color: #f6f6f6;
-
-  &:nth-child(2n) {
-    border: none;
-    background-color: transparent;
-  }
-}
-
-.box-service__head {
-  font-family: "Raleway";
-  font-weight: 600;
-  font-size: 20px;
-  color: $color-darker;
-  border-bottom: 1px $color-service-border solid;
-  text-transform: uppercase;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 80px;
-  transition: all 0.3s ease-out;
-  border-radius: 3px 3px 0 0;
+  align-items: center;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 8px 15px;
+  background-color: $color-dark;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  margin-left: 6px;
 
-  .box-service:hover & {
+  &::after {
+    position: absolute;
+    top: 0;
+    left: -6px;
+    width: 3px;
+    height: 100%;
     background-color: $color-main;
-    color: #fff;
+    content: '';
   }
 }
