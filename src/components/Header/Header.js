@@ -7,7 +7,6 @@ import classNames from "classnames"
 import Menu from "../Menu"
 
 const Header = ({ activePath, className, items, siteTitle }) => {
-  const scrollOffset = -65
   const [isMenuVisible, setMenuVisibility] = useState(false)
 
   const data = useStaticQuery(graphql`
@@ -56,7 +55,6 @@ const Header = ({ activePath, className, items, siteTitle }) => {
             activePath={activePath}
             items={items}
             onItemClick={handleItemClick}
-            scrollOffset={scrollOffset}
           />
         </nav>
       </div>

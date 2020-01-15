@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from "gatsby"
 import { Link as LinkScroll } from "react-scroll"
 import ArrowDots from "../components/ArrowDots"
 import ParallaxBackground from "../components/ParallaxBackground"
+import { SCROLL_OFFSET_TOP } from "../constants"
 
 const MainSlider = ({ bgImage }) => (
   <section className="section-top" id="top">
@@ -33,7 +34,7 @@ const MainSlider = ({ bgImage }) => (
               </div>
               <br />I focus mainly on{" "}
               <h2 className="text-highlight">front-end</h2> and{" "}
-              <h2 className="text-highlight">react</h2>
+              <h2 className="text-highlight">React</h2>
             </div>
             <div className="slider-top__slide">
               <div className="heading-box heading-box--bg heading-box--offset-bottom">
@@ -54,7 +55,7 @@ const MainSlider = ({ bgImage }) => (
               className="button-more scroll-to"
               to="about"
               smooth={true}
-              offset={-70}
+              offset={SCROLL_OFFSET_TOP}
             >
               Continue <i className="button-more__icon fa fa-chevron-down"></i>
             </LinkScroll>

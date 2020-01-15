@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import classNames from "classnames"
 import { Link as LinkScroll } from "react-scroll"
+import { SCROLL_OFFSET_TOP } from "../../constants"
 
 const Menu = ({ activePath, items, onItemClick, scrollOffset }) => (
   <ul>
@@ -29,5 +30,9 @@ const Menu = ({ activePath, items, onItemClick, scrollOffset }) => (
     })}
   </ul>
 )
+
+Menu.defaultProps = {
+  scrollOffset: SCROLL_OFFSET_TOP,
+}
 
 export default Menu
