@@ -1,5 +1,1 @@
-prohlížeè 1182 šíøka a plná výška
-
-základ:
-- šíøka 600
-- výška 450
+screen from web browser width 1182px, full height, then resize to width 600px a crop to height 450px
