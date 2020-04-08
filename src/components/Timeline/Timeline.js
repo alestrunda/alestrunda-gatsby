@@ -21,10 +21,10 @@ const Timeline = () => {
       <TimelineItem
         delay={delayInit + delayStep * 2}
         from={2014}
-        title="Freelancer"
+        title="Self-employed"
       >
         Full time freelancer - mainly front-end and WordPress developer. Working
-        for clients and various web studios.
+        for end clients and dozens of web studios.
       </TimelineItem>
       <TimelineItem
         delay={delayInit + delayStep * 3}
@@ -33,16 +33,15 @@ const Timeline = () => {
         to={2015}
         title="ThemeForest developer"
       >
-        Cooperating with other freelancers to develop templates and selling them
-        on ThemeForest.
+        Cooperating with other freelancers to develop templates and sell them on
+        ThemeForest.
       </TimelineItem>
       <TimelineItem
         delay={delayInit + delayStep * 4}
         from={2017}
         title="React.js"
       >
-        First project using modern JavaScript - Chuck Norris Jokes app build on
-        React.
+        First project using modern JavaScript - web app build on React.
       </TimelineItem>
       <TimelineItem
         delay={delayInit + delayStep * 5}
@@ -52,12 +51,15 @@ const Timeline = () => {
       >
         Thesis: educational web and mobile app in React and React Native.
       </TimelineItem>
+      <TimelineItem delay={delayInit + delayStep * 6} from={2019} title="QCM">
+        Full time job as front-end developer.
+      </TimelineItem>
       <TimelineItem
         delay={delayInit + delayStep * 6}
-        from={2019}
-        title="Front-end developer"
+        from={2020}
+        title="Solar Winds"
       >
-        Full time job as front-end developer at QCM.
+        Full time job as front-end developer in multinational company.
       </TimelineItem>
     </div>
   )
