@@ -57,6 +57,7 @@ const Timeline = () => {
       <TimelineItem
         delay={delayInit + delayStep * 6}
         from={2020}
+        reverse
         title="Solar Winds"
       >
         Full time job as front-end developer in multinational company.
