@@ -23,8 +23,8 @@ const Timeline = () => {
         from={2014}
         title="Self-employed"
       >
-        Full time freelancer - mainly front-end and WordPress developer. Working
-        for end clients and dozens of web studios.
+        Full-time freelancer - mainly front-end and WordPress developer. Working
+        for end clients and dozens of web studios over the years.
       </TimelineItem>
       <TimelineItem
         delay={delayInit + delayStep * 3}
@@ -52,7 +52,7 @@ const Timeline = () => {
         Thesis: educational web and mobile app in React and React Native.
       </TimelineItem>
       <TimelineItem delay={delayInit + delayStep * 6} from={2019} title="QCM">
-        Full time job as front-end developer.
+        Full-time job as front-end developer.
       </TimelineItem>
       <TimelineItem
         delay={delayInit + delayStep * 6}
@@ -60,7 +60,7 @@ const Timeline = () => {
         reverse
         title="Solar Winds"
       >
-        Full time job as front-end developer in multinational company.
+        Full-time job as front-end developer in an international company.
       </TimelineItem>
     </div>
   )
