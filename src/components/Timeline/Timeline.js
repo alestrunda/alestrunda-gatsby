@@ -60,7 +60,7 @@ const Timeline = () => {
         reverse
         title="Solar Winds"
       >
-        Full-time job as front-end developer in an international company.
+        Full-time job as a front-end developer in an international company.
       </TimelineItem>
     </div>
   )
