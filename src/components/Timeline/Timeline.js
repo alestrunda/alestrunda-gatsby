@@ -47,9 +47,10 @@ const Timeline = () => {
         delay={delayInit + delayStep * 5}
         from={2019}
         reverse
-        title="IT university degree"
+        title="IT university"
       >
-        Thesis: educational web and mobile app in React and React Native.
+        BSc degree, thesis: educational web and mobile app in React and React
+        Native.
       </TimelineItem>
       <TimelineItem delay={delayInit + delayStep * 6} from={2019} title="QCM">
         Full-time job as front-end developer.
