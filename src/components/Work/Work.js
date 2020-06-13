@@ -33,57 +33,59 @@ const Work = ({
             <h4 className="work-item__title">
               <Link to={path}>{title}</Link>
             </h4>
-            <p>
-              <em>{content}</em>
-            </p>
-            <div className="mt10">
-              {imageFull && (
-                <button
-                  className="icon-box icon-box--hover tooltip mr5"
-                  data-title="Full picture"
-                  onClick={handleLightboxBtnClick}
-                >
-                  <i className="icon-box__icon fa fa-search"></i>
-                </button>
-              )}
-              {urlList && (
-                <a
-                  className="icon-box icon-box--hover tooltip mr5"
-                  href={urlList}
-                  data-title="List of all pages"
-                  rel="nofollow"
-                >
-                  <i className="icon-box__icon fas fa-file-alt"></i>
-                </a>
-              )}
-              {urlLive && (
-                <a
-                  className="icon-box icon-box--hover tooltip mr5"
-                  href={urlLive}
-                  data-title="Live preview"
-                  rel={urlNoFollow ? "nofollow" : ""}
-                >
-                  <i className="icon-box__icon fa fa-share"></i>
-                </a>
-              )}
-              {urlGithub && (
-                <a
-                  className="icon-box icon-box--hover tooltip mr5"
-                  href={urlGithub}
-                  data-title="Github"
-                >
-                  <i className="icon-box__icon fab fa-github"></i>
-                </a>
-              )}
-              {path && (
-                <Link
-                  className="icon-box icon-box--hover tooltip mr5"
-                  to={path}
-                  data-title="Details"
-                >
-                  <i className="icon-box__icon fa fa-info"></i>
-                </Link>
-              )}
+            <div className="work-item__inner">
+              <p>
+                <em>{content}</em>
+              </p>
+              <div className="mt10">
+                {imageFull && (
+                  <button
+                    className="icon-box icon-box--hover tooltip mr5"
+                    data-title="Full picture"
+                    onClick={handleLightboxBtnClick}
+                  >
+                    <i className="icon-box__icon fa fa-search"></i>
+                  </button>
+                )}
+                {urlList && (
+                  <a
+                    className="icon-box icon-box--hover tooltip mr5"
+                    href={urlList}
+                    data-title="List of all pages"
+                    rel="nofollow"
+                  >
+                    <i className="icon-box__icon fas fa-file-alt"></i>
+                  </a>
+                )}
+                {urlLive && (
+                  <a
+                    className="icon-box icon-box--hover tooltip mr5"
+                    href={urlLive}
+                    data-title="Live preview"
+                    rel={urlNoFollow ? "nofollow" : ""}
+                  >
+                    <i className="icon-box__icon fa fa-share"></i>
+                  </a>
+                )}
+                {urlGithub && (
+                  <a
+                    className="icon-box icon-box--hover tooltip mr5"
+                    href={urlGithub}
+                    data-title="Github"
+                  >
+                    <i className="icon-box__icon fab fa-github"></i>
+                  </a>
+                )}
+                {path && (
+                  <Link
+                    className="icon-box icon-box--hover tooltip mr5"
+                    to={path}
+                    data-title="Details"
+                  >
+                    <i className="icon-box__icon fa fa-info"></i>
+                  </Link>
+                )}
+              </div>
             </div>
           </div>
         </div>

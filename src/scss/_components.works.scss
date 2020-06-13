@@ -45,6 +45,18 @@
   }
 }
 
+.work-item__inner {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+
+  .work-item:hover & {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+  }
+}
+
 .work-item__preview {
   position: absolute !important;
   top: 0;
@@ -63,6 +75,14 @@
 .work-item__title {
   color: $color-main;
   text-transform: uppercase;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+
+  .work-item:hover & {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .work-item__wrapper {
