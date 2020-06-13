@@ -4,8 +4,45 @@
   margin-bottom: 30px;
 }
 
-.post-article__photo {
+.post-article__img {
   height: auto;
+}
+
+.post-article__img-overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  transition: all ease-out 0.4s;
+  opacity: 0;
+  visibility: hidden;
+
+  .post-article__img-wrapper:hover & {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.post-article__img-title {
+  transform: translateY(10px);
+  opacity: 0;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+
+  .post-article__img-wrapper:hover & {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.post-article__img-wrapper {
+  display: block;
+  position: relative;
 }
 
 .post-article__title {

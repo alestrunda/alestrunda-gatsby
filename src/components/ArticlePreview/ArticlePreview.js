@@ -4,12 +4,19 @@ import Img from "gatsby-image"
 
 const ArticlePreview = ({ author, date, excerpt, image, title, url }) => (
   <div className="post-article">
-    <Link to={url}>
+    <Link className="post-article__img-wrapper" to={url}>
       <Img
         fluid={image}
-        className="post-article__photo img-responsive"
+        className="post-article__img img-responsive"
         alt={title}
       />
+      <div className="post-article__img-overlay">
+        <div className="decoration-border decoration-border--top"></div>
+        <div className="decoration-border decoration-border--bottom"></div>
+        <h4 className="post-article__img-title m0 text-yellow text-uppercase">
+          {title}
+        </h4>
+      </div>
     </Link>
     <h2 className="post-article__title">
       <Link className="link-clean" to={url}>
