@@ -52,7 +52,7 @@ const Timeline = () => (
       Native.
     </TimelineItem>
     <TimelineItem delay={DELAY_INIT + DELAY_STEP * 6} from={2019} title="QCM">
-      Full-time job as front-end developer.
+      Full-time job as a front-end developer.
     </TimelineItem>
     <TimelineItem
       delay={DELAY_INIT + DELAY_STEP * 6}
@@ -60,7 +60,7 @@ const Timeline = () => (
       reverse
       title="Solar Winds"
     >
-      Full-time job as a front-end developer in an international company.
+      Full-time job as a full-stack developer in an international company.
     </TimelineItem>
   </div>
 )
