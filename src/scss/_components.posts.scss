@@ -22,6 +22,8 @@
   transition: all ease-out 0.4s;
   opacity: 0;
   visibility: hidden;
+  padding-left: 40px;
+  padding-right: 40px;
 
   .post-article__img-wrapper:hover & {
     opacity: 1;
@@ -33,6 +35,7 @@
   transform: translateY(10px);
   opacity: 0;
   transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  line-height: 1.4;
 
   .post-article__img-wrapper:hover & {
     opacity: 1;
