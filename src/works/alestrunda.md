@@ -7,7 +7,7 @@ path: "/works/alestrunda/"
 published: "true"
 technologies: "HTML5 & CSS3, ITCSS, SASS, JavaScript, React, Gatsby, Webpack"
 title: "Web Ales Trunda"
-urlGithub: "https://github.com/alestrunda/alestrunda"
+urlGithub: "https://github.com/alestrunda/alestrunda-gatsby"
 urlLive: "http://alestrunda.cz"
 ---
 
