@@ -8,7 +8,7 @@ published: "true"
 technologies: "HTML5 & CSS3, ITCSS, JavaScript, Gatsby, React, SASS, Webpack"
 title: "Bakery"
 urlGithub: "https://github.com/alestrunda/bakery"
-urlLive: "http://bakery-gatsby.alestrunda.cz/"
+urlLive: "https://bakery-gatsby.netlify.app/"
 ---
 
 Gatsby is a static CMS, so something like WordPress, but static - without database.
