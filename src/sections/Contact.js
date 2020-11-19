@@ -32,8 +32,8 @@ const Contact = () => {
                 <>
                   <p>
                     Current status:{" "}
-                    <span className="text-white">available</span>
-                    for up to 20 hours a week.
+                    <span className="text-white">available</span> for freelance,
+                    up to 10 hours a week.
                   </p>
                   <p>
                     Want to start a new project with my or have a general
