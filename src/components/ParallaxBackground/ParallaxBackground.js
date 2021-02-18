@@ -3,7 +3,7 @@ import Img from "gatsby-image"
 import { InView } from "react-intersection-observer"
 
 //has to be outside, because we need to keep referecence to this same function for addEventListener and removeEventListener
-let handleScroll = func => {
+let handleScroll = (func) => {
   func(window.pageYOffset)
 }
 
@@ -14,7 +14,7 @@ const ParallaxBackground = ({ bgImage, children, rate }) => {
     handleScroll = handleScroll.bind(null, setScrollTop)
   }, [])
 
-  const handleViewChange = inView => {
+  const handleViewChange = (inView) => {
     if (inView) {
       window.addEventListener("scroll", handleScroll)
     } else {

@@ -7,7 +7,7 @@ const Filter = ({ activeFilter, featuredFilters, filters, onFilter }) => {
 
   let filtersShowed = filters
   if (featuredFilters && !showAllFilters) {
-    filtersShowed = filters.filter(filter => featuredFilters.includes(filter))
+    filtersShowed = filters.filter((filter) => featuredFilters.includes(filter))
   }
   const showAllFiltersButton =
     !showAllFilters && filtersShowed.length !== filters

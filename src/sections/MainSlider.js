@@ -79,6 +79,8 @@ export default () => (
         }
       }
     `}
-    render={data => <MainSlider bgImage={data.bgImage.childImageSharp.fluid} />}
+    render={(data) => (
+      <MainSlider bgImage={data.bgImage.childImageSharp.fluid} />
+    )}
   />
 )

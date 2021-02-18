@@ -18,7 +18,7 @@ class Portfolio extends React.Component {
     activeFilter: "",
   }
 
-  onFilter = filter => {
+  onFilter = (filter) => {
     this.setState({
       activeFilter: filter,
     })
@@ -37,17 +37,17 @@ class Portfolio extends React.Component {
             ""
           )
           .split(",")
-          .map(tech => tech.trim())
-          .filter(tech => !!tech)
+          .map((tech) => tech.trim())
+          .filter((tech) => !!tech)
       )
     ).sort()
 
     let activeEdges
     if (this.state.activeFilter) {
-      activeEdges = edges.filter(edge =>
+      activeEdges = edges.filter((edge) =>
         edge.node.frontmatter.technologies
           .split(",")
-          .map(tech => tech.trim())
+          .map((tech) => tech.trim())
           .includes(this.state.activeFilter)
       )
     } else {
@@ -97,7 +97,7 @@ class Portfolio extends React.Component {
   }
 }
 
-export default props => (
+export default (props) => (
   <StaticQuery
     query={graphql`
       query Works {
@@ -139,6 +139,6 @@ export default props => (
         }
       }
     `}
-    render={data => <Portfolio data={data} {...props} />}
+    render={(data) => <Portfolio data={data} {...props} />}
   />
 )

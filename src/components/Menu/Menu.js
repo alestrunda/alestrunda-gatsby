@@ -6,7 +6,7 @@ import { SCROLL_OFFSET_TOP } from "../../constants"
 
 const Menu = ({ activePath, items, onItemClick, scrollOffset }) => (
   <ul>
-    {items.map(item => {
+    {items.map((item) => {
       const { to, text, ...rest } = item
       const Component = to[0] === "/" ? Link : LinkScroll
       const extraProps = {}

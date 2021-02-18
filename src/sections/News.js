@@ -37,7 +37,7 @@ const News = () => {
           }
         }
       `}
-      render={data => (
+      render={(data) => (
         <section id="news">
           <div className="section-light section-content">
             <div className="container">

@@ -1,1 +1,3 @@
 export const SCROLL_OFFSET_TOP = -65
+
+export const PROFESSIONAL_CAREER_START_YEAR = 2014

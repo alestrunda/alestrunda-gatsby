@@ -81,7 +81,7 @@ export default () => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <Development bgImage={data.bgImage.childImageSharp.fluid} />
     )}
   />

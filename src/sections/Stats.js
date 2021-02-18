@@ -1,6 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import { StaticQuery, graphql } from "gatsby"
+import { PROFESSIONAL_CAREER_START_YEAR } from "../constants"
 import CounterInfo from "../components/CounterInfo"
 import InViewAnim from "../components/InViewAnim"
 
@@ -19,7 +20,7 @@ const Stats = ({ bgImage }) => (
             className="grid__item grid__item--xl-span-3 grid__item--lg-span-6"
             delay="100"
           >
-            {isAnimated => (
+            {(isAnimated) => (
               <CounterInfo
                 iconClassName="fa fa-smile"
                 text="satisfied clients"
@@ -33,7 +34,7 @@ const Stats = ({ bgImage }) => (
             className="grid__item grid__item--xl-span-3 grid__item--lg-span-6 grid__item--break-md-50"
             delay="200"
           >
-            {isAnimated => (
+            {(isAnimated) => (
               <CounterInfo
                 iconClassName="fa fa-thumbs-down"
                 text="sloppy projects"
@@ -46,11 +47,13 @@ const Stats = ({ bgImage }) => (
             className="grid__item grid__item--xl-span-3 grid__item--lg-span-6 grid__item--break-lg-50"
             delay="300"
           >
-            {isAnimated => (
+            {(isAnimated) => (
               <CounterInfo
                 iconClassName="fa fa-chart-line"
-                text="years freelancing"
-                value={6}
+                text="years of experience"
+                value={
+                  new Date().getFullYear() - PROFESSIONAL_CAREER_START_YEAR
+                }
                 started={isAnimated}
               />
             )}
@@ -59,7 +62,7 @@ const Stats = ({ bgImage }) => (
             className="grid__item grid__item--xl-span-3 grid__item--lg-span-6 grid__item--break-lg-50"
             delay="400"
           >
-            {isAnimated => (
+            {(isAnimated) => (
               <CounterInfo
                 iconClassName="fa fa-graduation-cap"
                 text="hours per week self-studying"
@@ -87,6 +90,6 @@ export default () => (
         }
       }
     `}
-    render={data => <Stats bgImage={data.bgImage.childImageSharp.fluid} />}
+    render={(data) => <Stats bgImage={data.bgImage.childImageSharp.fluid} />}
   />
 )

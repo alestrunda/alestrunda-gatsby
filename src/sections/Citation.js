@@ -53,7 +53,7 @@ export default () => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <CitationSection
         bgImage={data.bgImage.childImageSharp.fluid}
         quoteEdges={data.quotes.edges}
