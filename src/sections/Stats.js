@@ -5,6 +5,9 @@ import { PROFESSIONAL_CAREER_START_YEAR } from "../constants"
 import CounterInfo from "../components/CounterInfo"
 import InViewAnim from "../components/InViewAnim"
 
+const getYearsOfExperience = () =>
+  new Date().getFullYear() - PROFESSIONAL_CAREER_START_YEAR
+
 const Stats = ({ bgImage }) => (
   <section id="stats" className="bg-wrapper">
     <Img fluid={bgImage} className="bg-img" alt="" />
@@ -51,9 +54,7 @@ const Stats = ({ bgImage }) => (
               <CounterInfo
                 iconClassName="fa fa-chart-line"
                 text="years of experience"
-                value={
-                  new Date().getFullYear() - PROFESSIONAL_CAREER_START_YEAR
-                }
+                value={getYearsOfExperience()}
                 started={isAnimated}
               />
             )}
