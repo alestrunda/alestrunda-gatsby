@@ -31,15 +31,8 @@ const Contact = () => {
               {() => (
                 <>
                   <p>
-                    Current status:{" "}
-                    <span className="text-white">available</span> for freelance,
-                    up to 10 hours a week.
-                  </p>
-                  <p>
                     Want to start a new project with my or have a general
-                    question? Please don't hesitate to contact me and I'll get
-                    back to you in a flash of an eye. Looking forward to hear
-                    from you.
+                    question? Please don't hesitate to contact me.
                   </p>
                   <div className="m40"></div>
                   <IconOpeningSmall iconClassName="fa fa-home">
