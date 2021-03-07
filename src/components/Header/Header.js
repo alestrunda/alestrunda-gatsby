@@ -38,7 +38,7 @@ const Header = ({ activePath, className, items, siteTitle }) => {
           <Img
             fixed={data.logo.childImageSharp.fixed}
             className="el-full"
-            alt="ales trunda logo"
+            alt=""
           />
         </Link>
         <h1 className="page-header-inner__title heading-site-title">
