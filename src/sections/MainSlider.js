@@ -66,7 +66,7 @@ const MainSlider = ({ bgImage }) => (
   </section>
 )
 
-export default () => (
+const mainSliderWrapper = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -84,3 +84,5 @@ export default () => (
     )}
   />
 )
+
+export default mainSliderWrapper

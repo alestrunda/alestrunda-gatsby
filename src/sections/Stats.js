@@ -78,7 +78,7 @@ const Stats = ({ bgImage }) => (
   </section>
 )
 
-export default () => (
+const statsWrapper = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -94,3 +94,5 @@ export default () => (
     render={(data) => <Stats bgImage={data.bgImage.childImageSharp.fluid} />}
   />
 )
+
+export default statsWrapper

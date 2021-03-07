@@ -97,7 +97,7 @@ class Portfolio extends React.Component {
   }
 }
 
-export default (props) => (
+const portfolioWrapper = (props) => (
   <StaticQuery
     query={graphql`
       query Works {
@@ -142,3 +142,5 @@ export default (props) => (
     render={(data) => <Portfolio data={data} {...props} />}
   />
 )
+
+export default portfolioWrapper

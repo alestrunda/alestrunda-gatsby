@@ -28,7 +28,7 @@ CitationSection.defaultProps = {
   quoteEdges: [],
 }
 
-export default () => (
+const citationWrapper = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -61,3 +61,5 @@ export default () => (
     )}
   />
 )
+
+export default citationWrapper
