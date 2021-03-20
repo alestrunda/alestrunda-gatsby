@@ -13,7 +13,7 @@ const Stats = ({ bgImage }) => {
   const isUnmounted = useRef()
 
   useEffect(() => {
-    fetch("https://iq22l0wv25.execute-api.us-east-1.amazonaws.com/stats")
+    fetch("https://iq22l0wv25.execute-api.us-east-1.amazonaws.com/commits")
       .then((response) => response.json())
       .then((response) => {
         if (isUnmounted.current) return
