@@ -8,7 +8,7 @@ published: "true"
 technologies: "HTML5 & CSS3, ITCSS, JavaScript, Node.js, React, React Native, Redux, SASS, SQLite, Webpack, MongoDB"
 title: "Vocabulary Scholar"
 urlGithub: "https://github.com/alestrunda/vocabulary-scholar-web"
-urlLive: "https://vocabulary-scholar.herokuapp.com"
+urlLive: "https://vocabulary-scholar.netlify.app/"
 ---
 
 Educational app for learning english dictionary. Consists of three parts - web app (react), mobile app (react native, Android only) and server part (node.js, mongoDB, REST API).
@@ -17,7 +17,7 @@ Made for my bachelor's thesis, graded A so I suppose it was quite fine.
 
 You can use it to, it's available as native app for mobile (Android only) and web app in web browser.
 
-<a href="https://vocabulary-scholar.herokuapp.com/">Web app (EN)</a>
+<a href="https://vocabulary-scholar.netlify.app/">Web app (EN)</a>
 
 <a href="https://play.google.com/store/apps/details?id=cz.alestrunda.vocabularyscholar">Mobile app (EN) on Google Play</a>
 
