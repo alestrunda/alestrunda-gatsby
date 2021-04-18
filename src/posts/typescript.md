@@ -22,4 +22,4 @@ users?.admin?.name
 
 And now imagine even more nesting, that makes "Optional Chaining" very nice and concise indeed.
 
-Another interesting feature is "Nullish coalescing operator" - that is **??**
+Another interesting feature is **Nullish coalescing operator**, which is `??`.
