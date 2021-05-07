@@ -55,7 +55,8 @@ const About = () => (
                 <h2>Clean code</h2>
                 <p>
                   High quality code, linters, prettier, cross-browser support,
-                  optimizations, on-page SEO, responsive web design...
+                  accessibility, speed optimizations, on-page SEO, responsive
+                  web design
                 </p>
               </div>
             )}
