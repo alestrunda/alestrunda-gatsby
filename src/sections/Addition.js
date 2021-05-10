@@ -20,7 +20,12 @@ const Addition = () => (
                 animation="anim-list-check"
                 element="li"
               >
-                {() => <>6+ years since I started making websites</>}
+                {() => (
+                  <>
+                    {`${FIRST_WORKING_EXPERIENCE}`}+ years since I started
+                    making websites
+                  </>
+                )}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
@@ -28,7 +33,12 @@ const Addition = () => (
                 element="li"
                 delay="250"
               >
-                {() => <>4+ years working as freelancer</>}
+                {() => (
+                  <>
+                    {`${PROFESSIONAL_CAREER_START_YEAR}`}+ years working as
+                    freelancer
+                  </>
+                )}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
@@ -36,7 +46,7 @@ const Addition = () => (
                 element="li"
                 delay="450"
               >
-                {() => <>university education in IT</>}
+                {() => <>have degree in computer science</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
@@ -44,7 +54,7 @@ const Addition = () => (
                 element="li"
                 delay="300"
               >
-                {() => <>externally working for several web studios</>}
+                {() => <>worked for dozens of web studios</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
@@ -52,7 +62,7 @@ const Addition = () => (
                 element="li"
                 delay="350"
               >
-                {() => <>mobile app on Google Play</>}
+                {() => <>published mobile app on Google Play</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
@@ -60,7 +70,7 @@ const Addition = () => (
                 element="li"
                 delay="400"
               >
-                {() => <>6 templates on ThemeForest</>}
+                {() => <>developed 6 templates for ThemeForest</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
@@ -96,7 +106,7 @@ const Addition = () => (
                 element="li"
                 delay="350"
               >
-                {() => <>every day on email</>}
+                {() => <>reachable every day</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
@@ -128,7 +138,7 @@ const Addition = () => (
                 element="li"
                 delay="550"
               >
-                {() => <>8 hours per week self-studying</>}
+                {() => <>keen about studying and improvement</>}
               </InViewAnim>
             </ul>
           </div>
