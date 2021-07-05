@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import ImageLightbox from "../components/ImageLightbox"
 import Layout from "../components/Layout"
 import PostNavigation from "../components/PostNavigation"
-import SEO from "../components/Seo"
+import PageSeo from "../components/PageSeo"
 import { menuPage } from "../menuItems"
 
 const Work = ({
@@ -13,7 +13,7 @@ const Work = ({
   pageContext,
 }) => (
   <Layout menuItems={menuPage} activePath="/work/">
-    <SEO title={frontmatter.title} />
+    <PageSeo title={frontmatter.title} />
     <div className="page-title">
       <div className="container">
         <h1 className="heading-page">{frontmatter.title}</h1>

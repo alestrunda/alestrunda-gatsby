@@ -1,11 +1,11 @@
 import React from "react"
 import Layout from "../components/Layout"
-import SEO from "../components/Seo"
+import PageSeo from "../components/PageSeo"
 import { menuPage } from "../menuItems"
 
 const NotFoundPage = ({ location }) => (
   <Layout activePath="/blog/" menuItems={menuPage}>
-    <SEO title="404: Not found" />
+    <PageSeo title="404: Not found" />
     <div className="page-title">
       <div className="container">
         <h1 className="heading-page">Page not found</h1>

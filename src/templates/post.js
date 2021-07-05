@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/Layout"
-import SEO from "../components/Seo"
+import PageSeo from "../components/PageSeo"
 import PostNavigation from "../components/PostNavigation"
 import { menuPage } from "../menuItems"
 
@@ -13,7 +13,7 @@ const Post = ({
   pageContext,
 }) => (
   <Layout menuItems={menuPage} activePath="/blog/">
-    <SEO title={frontmatter.title} />
+    <PageSeo title={frontmatter.title} />
     <div className="page-title">
       <div className="container">
         <h1 className="heading-page">{frontmatter.title}</h1>

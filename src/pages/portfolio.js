@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/Layout"
-import SEO from "../components/Seo"
+import PageSeo from "../components/PageSeo"
 import SectionPortfolio from "../sections/Portfolio"
 import { menuPage } from "../menuItems"
 
 const PortfolioPage = () => (
   <Layout activePath="/portfolio/" menuItems={menuPage}>
-    <SEO title="Portfolio" />
+    <PageSeo title="Portfolio" />
     <SectionPortfolio />
   </Layout>
 )

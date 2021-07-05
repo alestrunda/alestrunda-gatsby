@@ -7,7 +7,7 @@ import Layout from "../components/Layout"
 import MainSlider from "../sections/MainSlider"
 import News from "../sections/News"
 import Portfolio from "../sections/Portfolio"
-import SEO from "../components/Seo"
+import PageSeo from "../components/PageSeo"
 import Services from "../sections/Services"
 import Stats from "../sections/Stats"
 import Testimonials from "../sections/Testimonials"
@@ -19,7 +19,7 @@ const IndexPage = () => (
     headerClassName="page-header--fixed"
     menuItems={menuIndex}
   >
-    <SEO title="Home" />
+    <PageSeo title="Home" />
     <MainSlider />
     <About />
     <Citation />

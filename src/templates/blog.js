@@ -3,12 +3,12 @@ import { graphql } from "gatsby"
 import ArticlePreview from "../components/ArticlePreview"
 import Layout from "../components/Layout"
 import Pagination from "../components/Pagination"
-import SEO from "../components/Seo"
+import PageSeo from "../components/PageSeo"
 import { menuPage } from "../menuItems"
 
 const NewsPage = ({ data, pageContext }) => (
   <Layout activePath="/blog/" menuItems={menuPage}>
-    <SEO title="News" />
+    <PageSeo title="News" />
     <div className="page-title">
       <div className="container">
         <h1 className="heading-page">Blog</h1>
