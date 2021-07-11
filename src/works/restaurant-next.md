@@ -2,7 +2,7 @@
 date: "2021-07-11"
 excerpt: "Simple restaurant template built on Next.js"
 image: "../images/works/restaurant-next.jpg"
-imageFull: "../images/works/restaurant-next-full.jpg" TODO:
+imageFull: "../images/works/restaurant-next-full.jpg"
 path: "/works/restaurant-next/"
 published: "true"
 technologies: "HTML5 & CSS3, Tailwind, JavaScript, Next.js, React"
