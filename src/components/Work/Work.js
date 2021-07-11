@@ -62,7 +62,8 @@ const Work = ({
                     className="icon-box icon-box--hover tooltip mr5"
                     href={urlLive}
                     data-title="Live preview"
-                    rel={urlNoFollow ? "nofollow" : ""}
+                    rel={`noopener noreferrer ${urlNoFollow ? "nofollow" : ""}`}
+                    target="_blank"
                   >
                     <i className="icon-box__icon fa fa-share"></i>
                   </a>
