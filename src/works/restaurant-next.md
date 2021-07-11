@@ -7,6 +7,7 @@ path: "/works/restaurant-next/"
 published: "true"
 technologies: "HTML5 & CSS3, Tailwind, JavaScript, Next.js, React"
 title: "Restaurant Next"
+urlGithub: "https://github.com/alestrunda/restaurant-next"
 urlLive: "https://restaurant-next.vercel.app/"
 ---
 
