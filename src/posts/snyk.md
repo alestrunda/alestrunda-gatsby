@@ -8,7 +8,7 @@ title: "Secure your code with Snyk"
 
 It's important to mind security, especially if you have an application working with private data. We hear every now and then about huge security incidents involving even the top software companies like Google or Microsoft. Luckily we've got several tools at our disposal that can help us with finding and fixing vulnerabilities.
 
-In my opinion, Snyk is the leading platform for securing code. Another popular one is WhiteSource, or we could also use for example `npm audit`, but Snyk seems to be the most advanced one.
+In my opinion, Snyk is the leading platform for securing code. Another popular one is WhiteSource, or we could also use for example tool build in npm - `npm audit`, but Snyk seems to be the most advanced one.
 
 I have Snyk enabled for this project through GitHub for free since my project is open source. If you want Snyk for your private projects, you'll have to go with a paid version. By default Snyk tests the project every day and also every time there is a change in your source code.
 
