@@ -6,7 +6,9 @@ const CounterInfo = ({
   delay,
   duration,
   iconClassName,
+  prefix,
   started,
+  suffix,
   text,
   value,
 }) => (
@@ -15,8 +17,10 @@ const CounterInfo = ({
       {value === 0 && 0}
       {value > 0 && (
         <>
+          {prefix ?? prefix}
           {!started && 0}
           {started && <CountUp end={value} delay={delay} duration={duration} />}
+          {suffix ?? suffix}
         </>
       )}
     </p>

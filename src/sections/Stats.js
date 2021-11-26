@@ -75,6 +75,7 @@ const Stats = ({ bgImage }) => {
                   text="years of professional experience"
                   value={getYearsOfExperience()}
                   started={isAnimated}
+                  suffix="+"
                 />
               )}
             </InViewAnim>
