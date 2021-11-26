@@ -72,7 +72,7 @@ const events = [
       <>Full-time job as a Software Engineer in an international company.</>
     ),
     from: 2020,
-    title: "Solar Winds",
+    title: "SolarWinds",
   },
 ]
 
