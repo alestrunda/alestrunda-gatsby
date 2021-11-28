@@ -66,6 +66,7 @@ const events = [
     content: <>Full-time job as a Front-end Developer.</>,
     from: 2019,
     title: "QCM",
+    to: 2020,
   },
   {
     content: (
@@ -73,6 +74,7 @@ const events = [
     ),
     from: 2020,
     title: "SolarWinds",
+    to: 2021,
   },
 ]
 
