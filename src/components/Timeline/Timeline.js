@@ -6,9 +6,9 @@ const DELAY_STEP = 100
 
 const events = [
   {
-    content: <>First experience with web development in a school project.</>,
+    content: <>First web development experience in a school project.</>,
     from: 2006,
-    title: "First dev experience",
+    title: "First developer experience",
   },
   {
     content: <>Studying IT at VUT Brno</>,
@@ -26,19 +26,8 @@ const events = [
   {
     content: (
       <>
-        Full-time freelancer - mainly front-end and WordPress developer. Working
-        for end clients and dozens of web studios over the years.
-      </>
-    ),
-    from: 2014,
-    title: "Self-employed",
-    to: 2019,
-  },
-  {
-    content: (
-      <>
-        Cooperating with other freelancers to develop templates and sell them on
-        ThemeForest.
+        Cooperating with other freelancers to sell templates on ThemeForest.
+        Created 7 templates with more than 1500 sales.
       </>
     ),
     from: 2014,
@@ -47,7 +36,18 @@ const events = [
   },
   {
     content: (
-      <>First project using modern JavaScript - web app built on React.</>
+      <>
+        Freelancing as a front-end and WordPress developer. And working as a
+        contractor for several web studios.
+      </>
+    ),
+    from: 2014,
+    title: "Full-time freelancer",
+    to: 2019,
+  },
+  {
+    content: (
+      <>First project using modern JavaScript - web app built with React.</>
     ),
     from: 2017,
     title: "React.js",
@@ -70,7 +70,7 @@ const events = [
   },
   {
     content: (
-      <>Full-time job as a Software Engineer in an international company.</>
+      <>Full-time job as a Software Engineer in large international company.</>
     ),
     from: 2020,
     title: "SolarWinds",
