@@ -1,3 +1,5 @@
+@use "sass:math";
+
 $breakpoint_types: map-keys($breakpoints-grid);
 
 .grid {
@@ -91,7 +93,7 @@ $key: nth($breakpoint_types, 1);
 @for $i from 1 through $grid_cols {
   .grid__item--#{$key}-span-#{$i} {
     flex: 0 0 auto;
-    width: #{$i / $grid_cols * 100 + "%"};
+    width: #{math.div($i, $grid_cols) * 100 + "%"};
   }
 }
 
@@ -102,7 +104,7 @@ $key: nth($breakpoint_types, 1);
     .grid__item--#{$key}-span-#{$i} {
       @include break-min($key_break) {
         flex: 0 0 auto;
-        width: #{$i / $grid_cols * 100 + "%"};
+        width: #{math.div($i, $grid_cols) * 100 + "%"};
       }
     }
   }
