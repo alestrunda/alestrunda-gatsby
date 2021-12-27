@@ -29,12 +29,23 @@ const MainSlider = ({ bgImage }) => (
                 <div className="decoration-border decoration-border--white decoration-border--top decoration-border--mid"></div>
                 <div className="decoration-border decoration-border--white decoration-border--bottom decoration-border--mid"></div>
                 <h2 className="heading-box__title--huge text-white">
+                  Full-stack
+                </h2>
+              </div>
+              <br />
+              focusing on <h2 className="text-highlight">React</h2> and{" "}
+              <h2 className="text-highlight">Node.js</h2>
+            </div>
+            <div className="slider-top__slide">
+              <div className="heading-box heading-box--bg heading-box--offset-bottom">
+                <div className="decoration-border decoration-border--white decoration-border--top decoration-border--mid"></div>
+                <div className="decoration-border decoration-border--white decoration-border--bottom decoration-border--mid"></div>
+                <h2 className="heading-box__title--huge text-white">
                   Freelancer
                 </h2>
               </div>
-              <br />I focus mainly on{" "}
-              <h2 className="text-highlight">front-end</h2> and{" "}
-              <h2 className="text-highlight">React</h2>
+              <br />
+              available as a <h2 className="text-highlight">contractor</h2>
             </div>
             <div className="slider-top__slide">
               <div className="heading-box heading-box--bg heading-box--offset-bottom">
