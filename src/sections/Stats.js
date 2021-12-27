@@ -1,28 +1,13 @@
-import React, { useEffect, useRef, useState } from "react"
+import React from "react"
 import Img from "gatsby-image"
 import { StaticQuery, graphql } from "gatsby"
 import { getYearsOfExperience } from "../helpers"
 import CounterInfo from "../components/CounterInfo"
 import InViewAnim from "../components/InViewAnim"
+import useGithubStats from "../hooks/useGithubStats"
 
 const Stats = ({ bgImage }) => {
-  const [githubStats, setGithubStats] = useState({})
-  const isUnmounted = useRef()
-
-  useEffect(() => {
-    fetch("https://llr0nawtb2.execute-api.us-east-1.amazonaws.com/commits")
-      .then((response) => response.json())
-      .then((response) => {
-        if (isUnmounted.current) return
-        setGithubStats(response)
-      })
-      .catch((e) => {
-        console.error(e)
-      })
-    return () => {
-      isUnmounted.current = true
-    }
-  })
+  const { stats: githubStats } = useGithubStats()
 
   return (
     <section id="stats" className="bg-wrapper">
