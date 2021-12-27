@@ -1,8 +1,9 @@
 import React from "react"
 import TimelineItem from "./TimelineItem"
+import { isEven } from "../../helpers"
 
-const DELAY_INIT = 200
-const DELAY_STEP = 100
+const DELAY_INIT = 200 //ms
+const DELAY_STEP = 100 //ms
 
 const events = [
   {
@@ -85,7 +86,7 @@ const Timeline = () => (
         delay={DELAY_INIT + DELAY_STEP * i}
         from={event.from}
         key={i}
-        reverse={i % 2 ? true : false}
+        reverse={isEven(i)}
         title={event.title}
         to={event.to}
       >
