@@ -1,12 +1,9 @@
 import React, { useEffect, useRef, useState } from "react"
 import Img from "gatsby-image"
 import { StaticQuery, graphql } from "gatsby"
-import { PROFESSIONAL_CAREER_START_YEAR } from "../constants"
+import { getYearsOfExperience } from "../helpers"
 import CounterInfo from "../components/CounterInfo"
 import InViewAnim from "../components/InViewAnim"
-
-const getYearsOfExperience = () =>
-  new Date().getFullYear() - PROFESSIONAL_CAREER_START_YEAR
 
 const Stats = ({ bgImage }) => {
   const [githubStats, setGithubStats] = useState({})
