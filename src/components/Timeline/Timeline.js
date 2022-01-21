@@ -71,11 +71,22 @@ const events = [
   },
   {
     content: (
-      <>Full-time job as a Software Engineer in large international company.</>
+      <>Full-time job as a Software Engineer in international corporate.</>
     ),
     from: 2020,
     title: "SolarWinds",
     to: 2021,
+  },
+  {
+    content: (
+      <>
+        Full-time job as a Front-end Developer in an international dynamically
+        growing startup.
+      </>
+    ),
+    from: 2021,
+    title: "Labster",
+    to: 2022,
   },
 ]
 
