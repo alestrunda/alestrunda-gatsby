@@ -26,8 +26,10 @@ const Work = ({
           <div className="grid__item grid__item--lg-span-7">
             <ImageLightbox
               alt={frontmatter.title}
-              imageFluid={frontmatter.image.childImageSharp.fluid}
-              imageFull={frontmatter.imageFull.childImageSharp.fluid.src}
+              imageFluid={frontmatter.image.childImageSharp.gatsbyImageData}
+              imageFull={
+                frontmatter.imageFull.childImageSharp.gatsbyImageData.src
+              }
             />
           </div>
           <div className="grid__item grid__item--lg-span-5 grid__item--break-md-30">
@@ -79,7 +81,7 @@ const Work = ({
 )
 
 export const pageQuery = graphql`
-  query($path: String!) {
+  query ($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
@@ -87,16 +89,12 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         image {
           childImageSharp {
-            fluid(maxWidth: 600, quality: 90) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 600, quality: 90, layout: CONSTRAINED)
           }
         }
         imageFull {
           childImageSharp {
-            fluid(maxWidth: 1920, quality: 90) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(quality: 90, layout: FULL_WIDTH)
           }
         }
         path

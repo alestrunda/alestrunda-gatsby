@@ -24,9 +24,7 @@ const News = () => {
                   date(formatString: "MMMM DD, YYYY")
                   image {
                     childImageSharp {
-                      fluid(maxWidth: 710) {
-                        ...GatsbyImageSharpFluid
-                      }
+                      gatsbyImageData(width: 710, layout: CONSTRAINED)
                     }
                   }
                   path
@@ -60,7 +58,9 @@ const News = () => {
                         author={node.frontmatter.author}
                         date={node.frontmatter.date}
                         excerpt={node.excerpt}
-                        image={node.frontmatter.image.childImageSharp.fluid}
+                        image={
+                          node.frontmatter.image.childImageSharp.gatsbyImageData
+                        }
                         title={node.frontmatter.title}
                         url={node.frontmatter.path}
                       />

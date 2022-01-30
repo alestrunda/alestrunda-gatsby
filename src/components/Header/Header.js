@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import classNames from "classnames"
 import Menu from "../Menu"
 
@@ -10,12 +10,10 @@ const Header = ({ activePath, className, items, siteTitle }) => {
   const [isMenuVisible, setMenuVisibility] = useState(false)
 
   const data = useStaticQuery(graphql`
-    query {
+    {
       logo: file(relativePath: { eq: "logo.jpg" }) {
         childImageSharp {
-          fixed(width: 46, height: 46, quality: 90) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(width: 46, height: 46, quality: 90, layout: FIXED)
         }
       }
     }
@@ -26,7 +24,8 @@ const Header = ({ activePath, className, items, siteTitle }) => {
   }
 
   const handleItemClick = () => {
-    setMenuVisibility(false) //make sure to close menu after clicked on menu item
+    // close menu when clicked on a menu item
+    setMenuVisibility(false)
   }
 
   return (
@@ -35,10 +34,10 @@ const Header = ({ activePath, className, items, siteTitle }) => {
         <Link to="/" className="page-header-inner__logo el-relative">
           <div className="decoration-border decoration-border--top decoration-border--small"></div>
           <div className="decoration-border decoration-border--bottom decoration-border--small"></div>
-          <Img
-            fixed={data.logo.childImageSharp.fixed}
+          <GatsbyImage
+            image={data.logo.childImageSharp.gatsbyImageData}
             className="el-full"
-            alt=""
+            alt="AT logo"
           />
         </Link>
         <h1 className="page-header-inner__title heading-site-title">

@@ -80,18 +80,16 @@ const MainSlider = ({ bgImage }) => (
 const mainSliderWrapper = () => (
   <StaticQuery
     query={graphql`
-      query {
+      {
         bgImage: file(relativePath: { eq: "bg_front_1920.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 1920) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: FULL_WIDTH)
           }
         }
       }
     `}
     render={(data) => (
-      <MainSlider bgImage={data.bgImage.childImageSharp.fluid} />
+      <MainSlider bgImage={data.bgImage.childImageSharp.gatsbyImageData} />
     )}
   />
 )

@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import Lightbox from "react-image-lightbox"
 
@@ -26,7 +26,11 @@ const Work = ({
     <>
       <div className="work-item">
         <div className="work-item__wrapper">
-          <Img fluid={image} className="work-item__preview" alt={title} />
+          <GatsbyImage
+            image={image}
+            className="work-item__preview"
+            alt={title}
+          />
           <div className="work-item__content">
             <div className="decoration-border decoration-border--top"></div>
             <div className="decoration-border decoration-border--bottom"></div>

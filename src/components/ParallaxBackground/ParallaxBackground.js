@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { InView } from "react-intersection-observer"
 
 //has to be outside, because we need to keep referecence to this same function for addEventListener and removeEventListener
@@ -26,12 +26,12 @@ const ParallaxBackground = ({ bgImage, children, rate }) => {
 
   return (
     <InView className="bg-wrapper" onChange={handleViewChange}>
-      <Img
+      <GatsbyImage
+        image={bgImage}
         style={{
           //works only from the top of the page, otherwise would also need to consider position of the image relative to the page
           transform: `translateY(${scrollTop * rate}px)`,
         }}
-        fluid={bgImage}
         className="bg-img"
         alt=""
       />
