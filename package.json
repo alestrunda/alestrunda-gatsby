@@ -33,7 +33,12 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
     "@fortawesome/fontawesome-free": "^5.15.4",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "jest": "^27.4.7",
     "prettier": "^2.5.1"
   },
   "keywords": [
@@ -46,7 +51,8 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"No tests specified\""
+    "test": "jest",
+    "test:coverage": "jest --coverage --collectCoverageFrom=src/**/*.{js,jsx,ts,tsx}"
   },
   "repository": {
     "type": "git",
