@@ -24,7 +24,8 @@ const Header = ({ activePath, className, items, siteTitle }) => {
   }
 
   const handleItemClick = () => {
-    setMenuVisibility(false) //make sure to close menu after clicked on menu item
+    // close menu when clicked on a menu item
+    setMenuVisibility(false)
   }
 
   return (
