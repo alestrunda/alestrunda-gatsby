@@ -80,8 +80,10 @@ class Portfolio extends React.Component {
               <Work
                 key={node.frontmatter.path}
                 content={node.frontmatter.excerpt.trim()}
-                image={node.frontmatter.image.childImageSharp.fluid}
-                imageFull={node.frontmatter.imageFull.childImageSharp.fluid}
+                image={node.frontmatter.image.childImageSharp.gatsbyImageData}
+                imageFull={
+                  node.frontmatter.imageFull.childImageSharp.gatsbyImageData
+                }
                 path={node.frontmatter.path}
                 title={node.frontmatter.title}
                 urlGithub={node.frontmatter.urlGithub}
@@ -114,16 +116,16 @@ const portfolioWrapper = (props) => (
                 excerpt
                 image {
                   childImageSharp {
-                    fluid(maxWidth: 552, quality: 90) {
-                      ...GatsbyImageSharpFluid
-                    }
+                    gatsbyImageData(
+                      width: 552
+                      quality: 90
+                      layout: CONSTRAINED
+                    )
                   }
                 }
                 imageFull {
                   childImageSharp {
-                    fluid(maxWidth: 1920, quality: 90) {
-                      ...GatsbyImageSharpFluid
-                    }
+                    gatsbyImageData(quality: 90, layout: FULL_WIDTH)
                   }
                 }
                 path

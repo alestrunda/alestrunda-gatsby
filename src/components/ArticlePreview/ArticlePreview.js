@@ -1,12 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 const ArticlePreview = ({ author, date, excerpt, image, title, url }) => (
   <div className="post-article">
     <Link className="post-article__img-wrapper" to={url}>
-      <Img
-        fluid={image}
+      <GatsbyImage
+        image={image}
         className="post-article__img img-responsive"
         alt={title}
       />

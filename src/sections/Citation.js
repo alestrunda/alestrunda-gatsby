@@ -1,5 +1,5 @@
 import React from "react"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { StaticQuery, graphql } from "gatsby"
 import Citation from "../components/Citation"
 
@@ -8,7 +8,7 @@ const CitationSection = ({ bgImage, quoteEdges }) => {
 
   return (
     <div id="citation" className="bg-wrapper">
-      <Img fluid={bgImage} className="bg-img" alt="" />
+      <GatsbyImage image={bgImage} className="bg-img" alt="" />
       <div className="section-dark section-content">
         <div className="container text-center">
           {quote && (
@@ -31,12 +31,10 @@ CitationSection.defaultProps = {
 const citationWrapper = () => (
   <StaticQuery
     query={graphql`
-      query {
+      {
         bgImage: file(relativePath: { eq: "bg_citation_1920.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 1920) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: FULL_WIDTH)
           }
         }
         quotes: allMarkdownRemark(
@@ -55,7 +53,7 @@ const citationWrapper = () => (
     `}
     render={(data) => (
       <CitationSection
-        bgImage={data.bgImage.childImageSharp.fluid}
+        bgImage={data.bgImage.childImageSharp.gatsbyImageData}
         quoteEdges={data.quotes.edges}
       />
     )}

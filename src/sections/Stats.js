@@ -1,5 +1,5 @@
 import React from "react"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { StaticQuery, graphql } from "gatsby"
 import { getYearsOfExperience } from "../helpers"
 import CounterInfo from "../components/CounterInfo"
@@ -11,7 +11,7 @@ const Stats = ({ bgImage }) => {
 
   return (
     <section id="stats" className="bg-wrapper">
-      <Img fluid={bgImage} className="bg-img" alt="" />
+      <GatsbyImage image={bgImage} className="bg-img" alt="" />
       <div className="section-dark section-content">
         <div className="container text-center">
           <header className="heading-box">
@@ -84,17 +84,17 @@ const Stats = ({ bgImage }) => {
 const statsWrapper = () => (
   <StaticQuery
     query={graphql`
-      query {
+      {
         bgImage: file(relativePath: { eq: "bg_stats_1920.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 1920) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: FULL_WIDTH)
           }
         }
       }
     `}
-    render={(data) => <Stats bgImage={data.bgImage.childImageSharp.fluid} />}
+    render={(data) => (
+      <Stats bgImage={data.bgImage.childImageSharp.gatsbyImageData} />
+    )}
   />
 )
 

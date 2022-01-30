@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout"
 import PageSeo from "../components/PageSeo"
 import PostNavigation from "../components/PostNavigation"
@@ -24,10 +24,10 @@ const Post = ({
         <PostNavigation prev={pageContext.prev} next={pageContext.next} />
         <div className="grid grid--big post-full">
           <div className="grid__item grid__item--lg-span-6">
-            <Img
+            <GatsbyImage
+              image={frontmatter.image.childImageSharp.gatsbyImageData}
               alt={frontmatter.title}
               className="img-responsive post-full__img"
-              fluid={frontmatter.image.childImageSharp.fluid}
             />
           </div>
           <div className="grid__item grid__item--lg-span-6">
@@ -46,16 +46,14 @@ const Post = ({
 )
 
 export const pageQuery = graphql`
-  query($path: String!) {
+  query ($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         image {
           childImageSharp {
-            fluid(maxWidth: 710, quality: 80) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 710, quality: 80, layout: CONSTRAINED)
           }
         }
         path
