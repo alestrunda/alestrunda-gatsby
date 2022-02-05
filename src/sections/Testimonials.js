@@ -51,8 +51,9 @@ const Testimonials = () => {
                   <Citation
                     author={node.frontmatter.author}
                     authorDetail={node.frontmatter.authorDetail}
-                    content={node.rawMarkdownBody.trim()}
-                  />
+                  >
+                    {node.rawMarkdownBody.trim()}
+                  </Citation>
                 </div>
               ))}
             </Slider>

@@ -14,9 +14,10 @@ const CitationSection = ({ bgImage, quoteEdges }) => {
           {quote && (
             <Citation
               author={quote.node.frontmatter.author}
-              content={quote.node.rawMarkdownBody.trim()}
               className="citation--huge text-white"
-            />
+            >
+              {quote.node.rawMarkdownBody.trim()}
+            </Citation>
           )}
         </div>
       </div>
