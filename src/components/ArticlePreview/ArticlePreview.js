@@ -2,14 +2,16 @@ import React from "react"
 import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
-const ArticlePreview = ({ author, date, excerpt, image, title, url }) => (
+const ArticlePreview = ({ author, children, date, image, title, url }) => (
   <div className="post-article">
     <Link className="post-article__img-wrapper" to={url}>
-      <GatsbyImage
-        image={image}
-        className="post-article__img img-responsive"
-        alt={title}
-      />
+      {image && (
+        <GatsbyImage
+          image={image}
+          className="post-article__img img-responsive"
+          alt={title}
+        />
+      )}
       <div className="post-article__img-overlay">
         <div className="decoration-border decoration-border--top"></div>
         <div className="decoration-border decoration-border--bottom"></div>
@@ -25,15 +27,17 @@ const ArticlePreview = ({ author, date, excerpt, image, title, url }) => (
     </h2>
     <ul className="list-tags">
       <li className="list-tags__item">
-        <i className="list-tags__icon fa fa-pencil-alt"></i> {author}
+        <i className="list-tags__icon fa fa-pencil-alt"></i>{" "}
+        <span data-testid="author">{author}</span>
       </li>
       <li className="list-tags__item">
-        <i className="list-tags__icon far fa-clock"></i> {date}
+        <i className="list-tags__icon far fa-clock"></i>{" "}
+        <span data-testid="date">{date}</span>
       </li>
     </ul>
-    {excerpt}
+    {children}
     <p className="text-right">
-      <Link className="link-read-more" to={url}>
+      <Link data-testid="link-read-more" className="link-read-more" to={url}>
         Read more
         <i className="fas fa-angle-double-right link-read-more__icon"></i>
       </Link>

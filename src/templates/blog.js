@@ -25,11 +25,12 @@ const NewsPage = ({ data, pageContext }) => (
               <ArticlePreview
                 author={node.frontmatter.author}
                 date={node.frontmatter.date}
-                excerpt={node.excerpt}
                 image={node.frontmatter.image.childImageSharp.gatsbyImageData}
                 title={node.frontmatter.title}
                 url={node.frontmatter.path}
-              />
+              >
+                {node.excerpt}
+              </ArticlePreview>
             </div>
           ))}
         </div>
