@@ -2,7 +2,7 @@ import * as React from "react"
 import { render, screen } from "@testing-library/react"
 import Citation from "./Citation"
 
-test("test", () => {
+test("renders correctly", () => {
   const author = "John Doe"
   const authorDetail = "coworker"
   const content = "Lorem impsum dolor sit atmet"
