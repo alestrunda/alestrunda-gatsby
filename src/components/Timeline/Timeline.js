@@ -64,7 +64,9 @@ const events = [
     title: "IT degree",
   },
   {
-    content: <>Full-time job as a Front-end Developer.</>,
+    content: (
+      <>Full-time job as a Front-end Developer in a well-established company.</>
+    ),
     from: 2019,
     title: "QCM",
     to: 2020,
