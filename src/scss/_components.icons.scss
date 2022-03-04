@@ -22,46 +22,6 @@
   transition: none;
 }
 
-.icon-opening {
-  padding: 0 25px 0 86px;
-  display: inline-block;
-  position: relative;
-  text-align: left;
-
-  &::after {
-    position: absolute;
-    top: 50%;
-    left: 25px;
-    margin-top: -18px;
-    line-height: 36px;
-    font-size: 36px;
-    text-align: left;
-    color: $color-main;
-    font-family: "FontAwesome";
-    transition: all 0.4s ease-out;
-  }
-}
-
-.icon-opening--check::after {
-  content: "\f00c";
-}
-
-.icon-opening--clock::after {
-  content: "\f017";
-}
-
-.icon-opening--cogs::after {
-  content: "\f085";
-}
-
-.icon-opening--cubes::after {
-  content: "\f1b3";
-}
-
-.icon-opening--wp::after {
-  content: "\f19a";
-}
-
 .icon-opening-big {
   display: flex;
   margin-bottom: 20px;
