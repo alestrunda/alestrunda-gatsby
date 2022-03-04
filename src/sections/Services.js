@@ -37,7 +37,7 @@ const Services = () => (
                 element="li"
                 dalay={delayInit}
               >
-                {() => <>React &amp; Redux, Vue, jQuery</>}
+                {() => <>Typescript, React, Vue</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
@@ -53,15 +53,7 @@ const Services = () => (
                 element="li"
                 delay={delayInit + delayStep * 2}
               >
-                {() => <>CSS3, SASS, ITCSS, BEM</>}
-              </InViewAnim>
-              <InViewAnim
-                className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
-                animation="anim-list-check"
-                element="li"
-                delay={delayInit + delayStep * 3}
-              >
-                {() => <>SPA &amp; PWA</>}
+                {() => <>CSS3, SASS, BEM, Tailwind</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
@@ -69,7 +61,7 @@ const Services = () => (
                 element="li"
                 delay={delayInit + delayStep * 4}
               >
-                {() => <>JAM stack</>}
+                {() => <>Redux, Vuex</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
@@ -77,7 +69,7 @@ const Services = () => (
                 element="li"
                 delay={delayInit + delayStep * 5}
               >
-                {() => <>CMS Gatsby (React)</>}
+                {() => <>JAM stack, Gatsby (React)</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
@@ -85,7 +77,7 @@ const Services = () => (
                 element="li"
                 delay={delayInit + delayStep * 6}
               >
-                {() => <>Git</>}
+                {() => <>Git, CI/CD, Netlify</>}
               </InViewAnim>
             </ul>
           </div>
@@ -137,7 +129,7 @@ const Services = () => (
                 element="li"
                 delay={delayInit + delayStep * 5}
               >
-                {() => <>Jest, Cypress</>}
+                {() => <>Jest, Testing Library, Cypress</>}
               </InViewAnim>
             </ul>
           </div>
