@@ -6,6 +6,44 @@
   }
 }
 
+.bg-icon {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-icon__icon {
+  position: absolute;
+  font-size: 300px;
+  opacity: 0.13;
+  z-index: -1;
+
+  @include break(md) {
+    font-size: 30vw;
+  }
+
+  @include break(xxl) {
+    font-size: 20vw;
+  }
+}
+
+.bg-icon__icon--bottom {
+  right: -15%;
+  bottom: 5%;
+
+  @include break(lg) {
+    right: -5%;
+  }
+}
+
+.bg-icon__icon--top {
+  left: -15%;
+  top: 5%;
+
+  @include break(lg) {
+    left: -5%;
+  }
+}
+
 .bg-img {
   position: absolute !important;
   top: 0;

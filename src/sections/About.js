@@ -13,7 +13,11 @@ const About = () => (
             <h1 className="heading-box__title">About me</h1>
           </header>
         </div>
-        <Timeline />
+        <div className="bg-icon">
+          <i className="bg-icon__icon bg-icon__icon--top fa fa-laptop-code"></i>
+          <i className="bg-icon__icon bg-icon__icon--bottom fa fa-clock-rotate-left"></i>
+          <Timeline />
+        </div>
         <div className="grid text-center">
           <InViewAnim className="grid__item grid__item--lg-span-4" delay="100">
             {() => (
