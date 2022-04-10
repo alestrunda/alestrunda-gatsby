@@ -88,7 +88,6 @@ const events = [
     ),
     from: 2021,
     title: "Labster",
-    to: 2022,
   },
 ]
 
