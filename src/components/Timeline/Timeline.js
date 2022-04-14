@@ -7,9 +7,9 @@ const DELAY_STEP = 100 //ms
 
 const events = [
   {
-    content: <>First web development experience in a school project.</>,
+    content: <>First web dev experience in a school project.</>,
     from: 2006,
-    title: "First developer experience",
+    title: "First dev experience",
   },
   {
     content: <>Studying IT at VUT Brno</>,
@@ -28,7 +28,7 @@ const events = [
     content: (
       <>
         Cooperating with other freelancers to sell templates on ThemeForest.
-        Created 7 templates with more than 1500 sales.
+        Created 7 templates with more than 1500 sales in total.
       </>
     ),
     from: 2014,
@@ -39,7 +39,7 @@ const events = [
     content: (
       <>
         Freelancing as a front-end and WordPress developer. And working as a
-        contractor for several web studios.
+        contractor for various web studios.
       </>
     ),
     from: 2014,
