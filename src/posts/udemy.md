@@ -1,7 +1,7 @@
 ---
 author: "Aleš Trunda"
 date: "2022-07-28"
-path: "/blog/vue/"
+path: "/blog/udemy/"
 image: "../images/news/udemy.jpg"
 title: "Udemy courses"
 ---
