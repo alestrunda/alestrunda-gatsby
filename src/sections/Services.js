@@ -37,7 +37,7 @@ const Services = () => (
                 element="li"
                 dalay={delayInit}
               >
-                {() => <>Typescript, React, Vue</>}
+                {() => <>ES6+, Typescript, React, Vue</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
@@ -45,7 +45,7 @@ const Services = () => (
                 element="li"
                 delay={delayInit + delayStep * 1}
               >
-                {() => <>ES6+, npm, yarn, webpack</>}
+                {() => <>npm, yarn, webpack, gulp</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
@@ -77,7 +77,7 @@ const Services = () => (
                 element="li"
                 delay={delayInit + delayStep * 6}
               >
-                {() => <>Git, CI/CD, Netlify</>}
+                {() => <>Git, CI/CD, Netlify, Datadog</>}
               </InViewAnim>
             </ul>
           </div>
@@ -89,7 +89,7 @@ const Services = () => (
                 element="li"
                 delay={delayInit}
               >
-                {() => <>Node.js &amp; Express</>}
+                {() => <>Node.js &amp; Express, Nuxt.js</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
@@ -105,7 +105,7 @@ const Services = () => (
                 element="li"
                 delay={delayInit + delayStep * 2}
               >
-                {() => <>React Native</>}
+                {() => <>AWS, docker, kubernetes</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
@@ -113,7 +113,7 @@ const Services = () => (
                 element="li"
                 delay={delayInit + delayStep * 3}
               >
-                {() => <>SQL / NOSQL database</>}
+                {() => <>SQL / NoSQL database</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
@@ -121,7 +121,7 @@ const Services = () => (
                 element="li"
                 delay={delayInit + delayStep * 4}
               >
-                {() => <>GraphQL, REST API</>}
+                {() => <>GraphQL, REST API, websockets</>}
               </InViewAnim>
               <InViewAnim
                 className="list-checks__item animated--faded animated--pseudo animated--speed-mid"
