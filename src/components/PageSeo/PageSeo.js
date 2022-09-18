@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
+import ogImage from "../../images/og_image.png"
+
 function PageSeo({ description, lang, title }) {
   const { site } = useStaticQuery(
     graphql`
@@ -35,9 +37,10 @@ function PageSeo({ description, lang, title }) {
       <meta charSet="utf-8" />
       <meta name="description" content={metaDescription} />
 
-      <meta name="og:title" content={title} />
-      <meta name="og:description" content={metaDescription} />
-      <meta name="og:type" content="website" />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={metaDescription} />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content={ogImage} />
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:creator" content={site.siteMetadata.author} />
