@@ -97,7 +97,7 @@ const Work = ({
       </div>
       {isLightboxOpened && (
         <Lightbox
-          mainSrc={imageFull.src}
+          mainSrc={imageFull.images.fallback.src}
           onCloseRequest={handleCloseLightbox}
         />
       )}
