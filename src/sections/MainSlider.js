@@ -29,12 +29,22 @@ const MainSlider = ({ bgImage }) => (
                 <div className="decoration-border decoration-border--white decoration-border--top decoration-border--mid"></div>
                 <div className="decoration-border decoration-border--white decoration-border--bottom decoration-border--mid"></div>
                 <h2 className="heading-box__title--huge text-white">
-                  Full-stack
+                  Frontend developer
                 </h2>
               </div>
               <br />
-              focusing on <h2 className="text-highlight">React</h2> and{" "}
-              <h2 className="text-highlight">Node.js</h2>
+              also working as <h2 className="text-highlight">full-stack</h2>
+            </div>
+            <div className="slider-top__slide">
+              <div className="heading-box heading-box--bg heading-box--offset-bottom">
+                <div className="decoration-border decoration-border--white decoration-border--top decoration-border--mid"></div>
+                <div className="decoration-border decoration-border--white decoration-border--bottom decoration-border--mid"></div>
+                <h2 className="heading-box__title--huge text-white">
+                  Javascript
+                </h2>
+              </div>
+              <br />
+              senior <h2 className="text-highlight">React</h2> developer
             </div>
             <div className="slider-top__slide">
               <div className="heading-box heading-box--bg heading-box--offset-bottom">
@@ -45,7 +55,7 @@ const MainSlider = ({ bgImage }) => (
                 </h2>
               </div>
               <br />
-              available as a <h2 className="text-highlight">contractor</h2>
+              available also as a <h2 className="text-highlight">contractor</h2>
             </div>
             <div className="slider-top__slide">
               <div className="heading-box heading-box--bg heading-box--offset-bottom">
@@ -55,8 +65,8 @@ const MainSlider = ({ bgImage }) => (
                   WordPress
                 </h2>
               </div>
-              <br />I also develop <h2 className="text-highlight">WordPress</h2>
-              themes
+              <br />
+              developing <h2 className="text-highlight">WordPress</h2> themes
             </div>
           </Slider>
         </div>
