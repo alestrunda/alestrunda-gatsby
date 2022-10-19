@@ -27,7 +27,7 @@ const events = [
   {
     content: (
       <>
-        Cooperating with other freelancers to sell templates on ThemeForest.
+        Cooperating with other freelancers and selling templates on ThemeForest.
         Created 7 templates with more than 1500 sales in total.
       </>
     ),
@@ -38,7 +38,7 @@ const events = [
   {
     content: (
       <>
-        Freelancing as a front-end and WordPress developer. And working as a
+        Freelancing as a frontend and WordPress developer. And working as a
         contractor for various web studios.
       </>
     ),
@@ -65,7 +65,7 @@ const events = [
   },
   {
     content: (
-      <>Full-time job as a Front-end Developer in a well-established company.</>
+      <>Full-time job as a Frontend Developer in a well-established company.</>
     ),
     from: 2019,
     title: "QCM",
@@ -82,7 +82,7 @@ const events = [
   {
     content: (
       <>
-        Full-time job as a Front-end Developer in an international dynamically
+        Full-time job as a Frontend Developer in an international dynamically
         growing startup.
       </>
     ),

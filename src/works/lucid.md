@@ -10,7 +10,7 @@ title: "Lucid template"
 urlLive: "http://lucid.alestrunda.cz/"
 ---
 
-Experimental template to try new technologies and technics. For example front-end framework Foundation - I use Bootstrap or my own.
+Experimental template to try new technologies and technics. For example frontend framework Foundation - I use Bootstrap or my own.
 
 Design from [webdesignerdepot.com](http://www.webdesignerdepot.com/2015/02/free-download-lucid-one-page-psd-template/)
 

@@ -14,4 +14,4 @@ urlNoFollow: "true"
 
 Modern web pages. Especially the top section with several animations on scroll was a bit tricky.
 
-Design was provided, my assignment was to develop front-end and of course be available in case some troubles occure while developing back-end.
+Design was provided, my assignment was to develop frontend and of course be available in case some troubles occure while developing back-end.

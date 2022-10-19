@@ -16,6 +16,6 @@ HTML template for web sites. Especially for companies in construction business.
 
 In preview is also customizer - allows to change some visual aspects of the themplate, 4 color version 2 background patterns are made.
 
-I did whole front-end, simple back-end for contact form for newsletter (connected to MailChimp). Design was provided by my partner IgnitionThemes.
+I did whole frontend, simple back-end for contact form for newsletter (connected to MailChimp). Design was provided by my partner IgnitionThemes.
 
 [Build on Themeforest](http://themeforest.net/item/built-html5-template-for-construction-businesses/13273821)

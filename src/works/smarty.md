@@ -15,8 +15,8 @@ HTML template for web sites. Especially for photographs as portfolio.
 
 Template is available in two versions: black, white.
 
-I did whole front-end, simple back-end for contact form for newsletter (connected to MailChimp). Design was provided by my partner jThemes.
+I did whole frontend, simple back-end for contact form for newsletter (connected to MailChimp). Design was provided by my partner jThemes.
 
-jThemes is an *Elite Author* (Elite Author = on Themeforest has sold more than $75000). He has sold more than 5000 items in value more than $125000 (about 3 millions CZK). Of course it's a group of authors, now I'm part of that too.</p>
+jThemes is an _Elite Author_ (Elite Author = on Themeforest has sold more than $75000). He has sold more than 5000 items in value more than $125000 (about 3 millions CZK). Of course it's a group of authors, now I'm part of that too.</p>
 
 [Smarty on Themeforest](http://themeforest.net/item/smarty-creative-agency-portfolio-template/12113490)

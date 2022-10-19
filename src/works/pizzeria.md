@@ -15,6 +15,6 @@ HTML template for web sites. Especially for pizzeria and restaurant.
 
 Template is available in two versions: black, white.
 
-I did whole front-end, simple back-end for contact form for newsletter (connected to MailChimp). Design was provided by my partner IgnitionThemes.
+I did whole frontend, simple back-end for contact form for newsletter (connected to MailChimp). Design was provided by my partner IgnitionThemes.
 
 [Pizzeria on Themeforest](http://themeforest.net/item/food-pizzeria-ultimate-delivery-html5-template/12534471)

@@ -2,7 +2,7 @@
 
 # AlesTrunda Web
 
-My personal web sites to present myself as a front-end developer. Running on Gatsby.
+My personal web sites to present myself as a frontend developer. Running on Gatsby.
 
 [alestrunda.eu](http://alestrunda.eu) - hosted on netlify uusing private domain.
 
@@ -18,4 +18,4 @@ Bootstrapped with [Gatsby's default starter](https://github.com/gatsbyjs/gatsby-
 
 `yarn develop` starts local development server
 
-`yarn build` builds the site into *public* folder
+`yarn build` builds the site into _public_ folder

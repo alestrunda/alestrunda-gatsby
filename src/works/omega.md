@@ -10,4 +10,4 @@ title: "Omega template"
 urlLive: "http://omega.alestrunda.cz/"
 ---
 
-Set of modern multipurpose template. 9 versions (live preview is version Restaurant). I made front-end, design provided.
+Set of modern multipurpose template. 9 versions (live preview is version Restaurant). I made frontend, design provided.

@@ -11,7 +11,7 @@ urlGithub: "https://github.com/alestrunda/alestrunda-gatsby"
 urlLive: "http://alestrunda.cz"
 ---
 
-My presonal web sites. Originally as static web sites, no CMS and using Bootstrap. Then I connected it to WordPress and used my own front-end framework instead of Bootstrap and I also refactored CSS to comply with ITCSS. Now instead of WordPress I switched to static CMS Gatsby.
+My presonal web sites. Originally as static web sites, no CMS and using Bootstrap. Then I connected it to WordPress and used my own frontend framework instead of Bootstrap and I also refactored CSS to comply with ITCSS. Now instead of WordPress I switched to static CMS Gatsby.
 
 That's the technological development since 2014.
 

@@ -10,4 +10,4 @@ title: "Excelsior template"
 urlLive: "http://excelsior2.alestrunda.cz/"
 ---
 
-Modern multipurpose template. I made front-end, design provided.
+Modern multipurpose template. I made frontend, design provided.

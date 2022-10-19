@@ -12,4 +12,4 @@ urlList: "http://lk-baits.alestrunda.cz/list.html"
 urlLive: "http://lk-baits.alestrunda.cz/"
 ---
 
-New e-shop http://www.lkbaits.cz/, design provided, I made front-end, output html,css,js using Bootstrap, jQuery a Less.
+New e-shop http://www.lkbaits.cz/, design provided, I made frontend, output html,css,js using Bootstrap, jQuery a Less.

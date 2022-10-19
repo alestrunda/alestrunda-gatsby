@@ -12,4 +12,4 @@ urlList: "http://csad.alestrunda.cz/list.html"
 urlLive: "http://csad.alestrunda.cz/"
 ---
 
-New web sites for company ČSAD Kyjov, design provided, I made front-end, output html,css,js using Bootstrap, jQuery and SASS.
+New web sites for company ČSAD Kyjov, design provided, I made frontend, output html,css,js using Bootstrap, jQuery and SASS.
