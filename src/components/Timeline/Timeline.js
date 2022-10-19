@@ -12,7 +12,7 @@ const events = [
     title: "First dev experience",
   },
   {
-    content: <>Studying IT at VUT Brno</>,
+    content: <>Studying IT at VUT Brno.</>,
     from: 2009,
     title: "IT university",
     to: 2014,
