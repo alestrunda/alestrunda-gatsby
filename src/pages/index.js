@@ -19,7 +19,7 @@ const IndexPage = () => (
     headerClassName="page-header--fixed"
     menuItems={menuIndex}
   >
-    <PageSeo title="Full-stack developer, react, freelancer" />
+    <PageSeo title="Frontend software engineer, react developer, contractor" />
     <MainSlider />
     <About />
     <Citation />
