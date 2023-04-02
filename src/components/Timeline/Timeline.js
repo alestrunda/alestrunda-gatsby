@@ -65,7 +65,10 @@ const events = [
   },
   {
     content: (
-      <>Full-time job as a Frontend Developer in a well-established company.</>
+      <>
+        Full-time job as a Frontend Developer in a well-established Czech
+        company.
+      </>
     ),
     from: 2019,
     title: "QCM",
@@ -88,6 +91,17 @@ const events = [
     ),
     from: 2021,
     title: "Labster",
+    to: 2022,
+  },
+  {
+    content: (
+      <>
+        Full-time job as a Staff Software Engineer in a big international
+        cybersecurity company.
+      </>
+    ),
+    from: 2022,
+    title: "SentinelOne",
   },
 ]
 
