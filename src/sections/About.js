@@ -27,10 +27,11 @@ const About = () => (
                   <div className="decoration-border decoration-border--bottom decoration-border--smaller"></div>
                   <i className="box-icon__icon fab fa-react"></i>
                 </div>
-                <h2>Modern Technologies</h2>
+                <h2>Vast Experience</h2>
                 <p>
-                  Using modern technologies like React, Gatsby, ES6+, WordPress
-                  REST API, GraphQL, webpack...
+                  Over about 10 years of being a professional software engineer,
+                  I've worked in many industries and for companies of various
+                  sizes.
                 </p>
               </div>
             )}
@@ -44,7 +45,10 @@ const About = () => (
                   <i className="box-icon__icon fa fa-wrench"></i>
                 </div>
                 <h2>Precise Development</h2>
-                <p>Tailor-made projects instead of third-party templates</p>
+                <p>
+                  My focus is on complex tailored solutions. Without depending
+                  on templates or low-code tools.
+                </p>
               </div>
             )}
           </InViewAnim>
@@ -56,11 +60,11 @@ const About = () => (
                   <div className="decoration-border decoration-border--bottom decoration-border--smaller"></div>
                   <i className="box-icon__icon fa fa-file-code"></i>
                 </div>
-                <h2>Clean code</h2>
+                <h2>High quality code</h2>
                 <p>
-                  High quality code, linters, prettier, cross-browser support,
-                  accessibility, speed optimizations, on-page SEO, responsive
-                  web design
+                  linters, speed optimizations, cross-browser support, design
+                  patterns, automated tests, best security practices,
+                  accessibility, on-page SEO...
                 </p>
               </div>
             )}
