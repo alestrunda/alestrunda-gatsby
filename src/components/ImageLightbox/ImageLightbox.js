@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
-import Lightbox from "react-image-lightbox"
+import Lightbox from "yet-another-react-lightbox"
 
 const ImageLightbox = ({ alt, imageFluid, imageFull }) => {
   const [isOpened, setOpened] = useState(false)
@@ -16,9 +16,12 @@ const ImageLightbox = ({ alt, imageFluid, imageFull }) => {
       <button onClick={handleOpen} className="cursor-pointer el-full">
         <GatsbyImage image={imageFluid} className="img-responsive" alt={alt} />
       </button>
-      {isOpened && (
-        <Lightbox mainSrc={imageFull} onCloseRequest={handleClose} />
-      )}
+      <Lightbox
+        open={isOpened}
+        close={handleClose}
+        carousel={{ finite: true }}
+        slides={[{ src: imageFull }]}
+      />
     </>
   )
 }

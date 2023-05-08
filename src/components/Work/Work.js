@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
-import Lightbox from "react-image-lightbox"
+import Lightbox from "yet-another-react-lightbox"
 
 const Work = ({
   content,
@@ -95,12 +95,12 @@ const Work = ({
           </div>
         </div>
       </div>
-      {isLightboxOpened && (
-        <Lightbox
-          mainSrc={imageFull.images.fallback.src}
-          onCloseRequest={handleCloseLightbox}
-        />
-      )}
+      <Lightbox
+        open={isLightboxOpened}
+        close={handleCloseLightbox}
+        carousel={{ finite: true }}
+        slides={[{ src: imageFull.images.fallback.src }]}
+      />
     </>
   )
 }

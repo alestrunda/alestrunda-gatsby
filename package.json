@@ -24,11 +24,11 @@
     "react-countup": "^6.4.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
-    "react-image-lightbox": "^5.1.4",
     "react-intersection-observer": "^9.4.3",
     "react-scroll": "^1.8.9",
     "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "yet-another-react-lightbox": "^3.5.3"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.21.4",
