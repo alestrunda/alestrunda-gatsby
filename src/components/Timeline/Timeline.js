@@ -7,9 +7,11 @@ const DELAY_STEP = 100 //ms
 
 const events = [
   {
-    content: <>First web dev experience in a school project.</>,
+    content: (
+      <>First developer experience in a school project in high school.</>
+    ),
     from: 2006,
-    title: "First dev experience",
+    title: "First developer experience",
   },
   {
     content: <>Studying IT at VUT Brno.</>,
