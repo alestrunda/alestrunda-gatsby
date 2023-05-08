@@ -9,7 +9,7 @@ const Testimonials = () => {
       query Testimonials {
         allMarkdownRemark(
           filter: { fileAbsolutePath: { regex: "//testimonials//" } }
-          sort: { order: DESC, fields: [frontmatter___date] }
+          sort: { frontmatter: { date: DESC } }
         ) {
           edges {
             node {

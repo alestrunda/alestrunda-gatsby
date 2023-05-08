@@ -13,7 +13,7 @@ const News = () => {
         query PostsFeatured {
           allMarkdownRemark(
             filter: { fileAbsolutePath: { regex: "//posts//" } }
-            sort: { order: DESC, fields: [frontmatter___date] }
+            sort: { frontmatter: { date: DESC } }
             limit: 3
           ) {
             edges {
