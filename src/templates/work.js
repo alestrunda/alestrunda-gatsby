@@ -28,7 +28,8 @@ const Work = ({
               alt={frontmatter.title}
               imageFluid={frontmatter.image.childImageSharp.gatsbyImageData}
               imageFull={
-                frontmatter.imageFull.childImageSharp.gatsbyImageData.src
+                frontmatter.imageFull.childImageSharp.gatsbyImageData.images
+                  .fallback.src
               }
             />
           </div>
