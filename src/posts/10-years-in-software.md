@@ -2,7 +2,7 @@
 author: "Aleš Trunda"
 date: "2024-01-21"
 path: "/blog/10-years-in-software/"
-image: "../images/news/freelance.jpg"
+image: "../images/news/celebration.jpg"
 title: "10 years in software"
 ---
 
