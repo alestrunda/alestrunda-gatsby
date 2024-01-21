@@ -68,8 +68,8 @@ const Stats = ({ bgImage }) => {
               {(isAnimated) => (
                 <CounterInfo
                   iconClassName="fa fa-graduation-cap"
-                  text="finished courses on udemy"
-                  value={5}
+                  text="finished software courses"
+                  value={17}
                   started={isAnimated}
                 />
               )}
