@@ -104,7 +104,6 @@ const events = [
     ),
     from: 2022,
     title: "SentinelOne",
-    to: 2023,
   },
 ]
 
